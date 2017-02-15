@@ -1,0 +1,19 @@
+{
+  "name": "alacrity-website",
+  "version": "1.0.0",
+  "description": "Website for Alacrity Web Development",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelJC91/alacrity-website.git"
+  },
+  "author": "Michael Carniato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelJC91/alacrity-website/issues"
+  },
+  "homepage": "https://github.com/MichaelJC91/alacrity-website#readme"
+}
