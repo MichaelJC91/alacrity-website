@@ -2,11 +2,27 @@
 	"version": 3,
 	"file": "../sass/main.css",
 	"sources": [
-		"../sass/main.sass"
+		"../sass/main.sass",
+		"../sass/base/_base.sass",
+		"../sass/base/_variables.sass",
+		"../sass/base/_flexBox.sass",
+		"../sass/layout/_header.sass",
+		"../sass/layout/_hero-image.sass",
+		"../sass/modules/_typography.sass",
+		"../sass/modules/_components.sass",
+		"../sass/modules/_buttons.sass"
 	],
 	"sourcesContent": [
-		"h1 {\n  color: red; }\n"
+		"@import \"./base/_base.sass\";\n@import \"./base/_variables.sass\";\n@import \"./base/_flexBox.sass\";\n@import \"./layout/_header.sass\";\n@import \"./layout/_hero-image.sass\";\n@import \"./modules/_typography.sass\";\n@import \"./modules/_components.sass\";\n@import \"./modules/_buttons.sass\";\n",
+		"\n",
+		"// Text Colors\n$primary-color: #00b0dc;\n$white: #ffffff;\n$text-shadow: #313131;\n$button-hover: #007D9A;\n",
+		"\n",
+		"@import \"../base/_variables.sass\";\n\n.transparentBar {\n  position: fixed;\n  background-color: transparent;\n  width: 100%;\n  z-index: 99999; }\n\n.spacer {\n  width: 100%;\n  margin-top: 80px; }\n\n.navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\");\n  cursor: pointer; }\n\n.navbar-nav .nav-item .nav-link {\n  color: $white;\n  padding-right: 2rem;\n  padding-left: 2rem; }\n\n.navbar-brand {\n  cursor: default;\n\n  img {\n    cursor: pointer; } }\n",
+		"@import \"../base/_variables.sass\";\n\n.homeHeroImage {\n  background: url('http://res.cloudinary.com/alacrity-web-development/image/upload/b_rgb:000,bo_1px_solid_rgb:000,o_45/v1487142839/Alacrity%20Web%20Development/Alacrity_Web_Development_Hero.jpg');\n  height: 100vh;\n  background-size: cover;\n  background-repeat: no-repeat;\n  color: $white; }\n\n.viewPortHeight {\n  height: 100vh; }\n",
+		"@import \"../base/_variables.sass\";\n\nbody {\n  font-family: 'Ubuntu', sans-serif; }\n\n.textShadow {\n  text-shadow: 3px 1px 5px $text-shadow; }\n",
+		"@import \"../base/_variables.sass\";\n\n.seperator {\n  border-bottom: 3px solid $primary-color;\n  max-width: 10%;\n  margin: 40px auto; }\n",
+		"@import \"../base/_variables.sass\";\n\n.btn-primary {\n  background-color: $primary-color;\n  border-color: $primary-color;\n  font-weight: 300;\n  &:hover {\n    background-color: $button-hover;\n    border-color: $button-hover; } }\n"
 	],
-	"mappings": ";AAAA,AAAA,EAAE,CAAC;EACD,KAAK,EAAE,GAAI;CAAG",
+	"mappings": ";AIEA,AAAA,eAAe,CAAC;EACd,QAAQ,EAAE,KAAM;EAChB,gBAAgB,EAAE,WAAY;EAC9B,KAAK,EAAE,IAAK;EACZ,OAAO,EAAE,KAAM;CAAG;;;AAEpB,AAAA,OAAO,CAAC;EACN,KAAK,EAAE,IAAK;EACZ,UAAU,EAAE,IAAK;CAAG;;;AAEtB,AAAA,oBAAoB,CAAC;EACnB,gBAAgB,EAAE,mPAAG;EACrB,MAAM,EAAE,OAAQ;CAAG;;;AAErB,AAAsB,WAAX,CAAC,SAAS,CAAC,SAAS,CAAC;EAC9B,KAAK,EFfC,OAAO;EEgBb,aAAa,EAAE,IAAK;EACpB,YAAY,EAAE,IAAK;CAAG;;;AAExB,AAAA,aAAa,CAAC;EACZ,MAAM,EAAE,OAAQ;CAGO;;;AAJzB,AAGE,aAHW,CAGX,GAAG,CAAC;EACF,MAAM,EAAE,OAAQ;CAAG;;;ACvBvB,AAAA,cAAc,CAAC;EACb,UAAU,EAAE,qLAAG;EACf,MAAM,EAAE,KAAM;EACd,eAAe,EAAE,KAAM;EACvB,iBAAiB,EAAE,SAAU;EAC7B,KAAK,EHLC,OAAO;CGKG;;;AAElB,AAAA,eAAe,CAAC;EACd,MAAM,EAAE,KAAM;CAAG;;;ACRnB,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,oBAAqB;CAAG;;;AAEvC,AAAA,WAAW,CAAC;EACV,WAAW,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CJHZ,OAAO;CIGqB;;;ACJ1C,AAAA,UAAU,CAAC;EACT,aAAa,EAAE,GAAG,CAAC,KAAK,CLFV,OAAO;EKGrB,SAAS,EAAE,GAAI;EACf,MAAM,EAAE,SAAU;CAAG;;;ACHvB,AAAA,YAAY,CAAC;EACX,gBAAgB,ENFF,OAAO;EMGrB,YAAY,ENHE,OAAO;EMIrB,WAAW,EAAE,GAAI;CAGiB;;;AANpC,AAAA,YAAY,AAIT,MAAM,CAAC;EACN,gBAAgB,ENHL,OAAO;EMIlB,YAAY,ENJD,OAAO;CMIY",
 	"names": []
 }
