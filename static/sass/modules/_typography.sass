@@ -1,7 +1,47 @@
 @import "../base/_variables.sass"
 
 body
-  font-family: 'Ubuntu', sans-serif
+  font-family: 'Open Sans', sans-serif
+a
+  color: $text-color
+  transition: 0.3s ease-in-out
+  &:hover
+    color: $primary-color
+    text-decoration: none
+  &:focus
+    text-decoration: none
 
+// Headings
+h1
+  font-weight: 600
+
+// Paragraph Tags
+p
+  font-size: 1.125rem
+
+// Text Decorations
 .textShadow
   text-shadow: 3px 1px 5px $text-shadow
+
+// Container Specific Text Elements
+.homeOurWorkGridColor a
+  color: $white
+
+.notActive a
+  &:after
+    content: "\f067"
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    text-decoration: inherit
+    //adjust as necessary
+    color: $primary-color
+    font-size: 18px
+    padding-left: 0.5em
+    position: relative
+
+.activeToggle
+  @extend .notActive
+  a
+    &:after
+      content: "\f068"

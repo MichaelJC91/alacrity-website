@@ -1,4 +1,3 @@
-/* line 3, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_header.sass */
 .transparentBar {
   position: fixed;
   background-color: transparent;
@@ -6,77 +5,271 @@
   z-index: 99999;
 }
 
-/* line 9, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_header.sass */
 .spacer {
   width: 100%;
   margin-top: 80px;
 }
 
-/* line 13, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_header.sass */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   cursor: pointer;
 }
 
-/* line 17, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_header.sass */
 .navbar-nav .nav-item .nav-link {
   color: #ffffff;
   padding-right: 2rem;
   padding-left: 2rem;
 }
 
-/* line 22, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_header.sass */
 .navbar-brand {
   cursor: default;
 }
 
-/* line 25, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_header.sass */
 .navbar-brand img {
   cursor: pointer;
 }
 
-/* line 3, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_hero-image.sass */
+.sticky {
+  transition: 0.5s ease-in-out;
+  background-color: rgba(0, 176, 220, 0.9);
+  box-shadow: 0 1px 3px #7b7b7b;
+}
+
 .homeHeroImage {
-  background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/b_rgb:000,bo_1px_solid_rgb:000,o_45/v1487142839/Alacrity%20Web%20Development/Alacrity_Web_Development_Hero.jpg");
+  background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487381995/Alacrity_Web_Development_Hero_Overlay.jpg");
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
 }
 
-/* line 10, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/layout/_hero-image.sass */
 .viewPortHeight {
   height: 100vh;
 }
 
-/* line 3, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/modules/_typography.sass */
-body {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-/* line 6, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/modules/_typography.sass */
-.textShadow {
-  text-shadow: 3px 1px 5px #313131;
-}
-
-/* line 3, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/modules/_components.sass */
 .seperator {
   border-bottom: 3px solid #00b0dc;
   max-width: 10%;
   margin: 40px auto;
 }
 
-/* line 3, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/modules/_buttons.sass */
+.homeOurWorkSeperator {
+  border-color: #ffffff;
+}
+
+.backgroundImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlay:hover .homeOurWorkTextWrapper, .homeOurWorkGridOne:hover .homeOurWorkTextWrapper, .homeOurWorkGridTwo:hover .homeOurWorkTextWrapper, .homeOurWorkGridThree:hover .homeOurWorkTextWrapper, .homeOurWorkGridFour:hover .homeOurWorkTextWrapper, .homeOurWorkGridFive:hover .homeOurWorkTextWrapper {
+  opacity: 1;
+}
+
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 176, 220, 0.9);
+}
+
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before {
+  opacity: 1;
+}
+
+.transparentBackground {
+  transition: all 0.5s;
+}
+
+.displayNone {
+  display: none;
+}
+
+.viewHeight100 {
+  height: 100vh;
+}
+
+.containerTopPadding {
+  padding-top: 20px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.homeOurWorkRow {
+  position: relative;
+}
+
+.homeOurWorkGridOne {
+  height: 70%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 3s ease-in-out;
+}
+
+.homeOurWorkGridTwo {
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.homeOurWorkGridThree {
+  height: 30%;
+  position: absolute;
+  left: 25%;
+  top: 70%;
+}
+
+.homeOurWorkGridFour {
+  height: 30%;
+  position: absolute;
+  left: 0;
+  top: 70%;
+}
+
+.homeOurWorkGridFive {
+  height: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.homeOurWorkTextWrapper {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 9999;
+  text-shadow: 1px 1px 1px #313131;
+}
+
+.homeBenefits {
+  border-top: 1px solid #ccc;
+  padding: 30px;
+}
+
+.contactFooter {
+  background-color: #02101d;
+  color: #ffffff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #292b2c;
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #00b0dc;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.textShadow {
+  text-shadow: 3px 1px 5px #313131;
+}
+
+.homeOurWorkGridColor a {
+  color: #ffffff;
+}
+
+.notActive a:after, .activeToggle a:after {
+  content: "\f067";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #00b0dc;
+  font-size: 18px;
+  padding-left: 0.5em;
+  position: relative;
+}
+
+.activeToggle a:after {
+  content: "\f068";
+}
+
+.seperator {
+  border-bottom: 3px solid #00b0dc;
+  max-width: 10%;
+  margin: 40px auto;
+}
+
+.homeOurWorkSeperator {
+  border-color: #ffffff;
+}
+
+.backgroundImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlay:hover .homeOurWorkTextWrapper, .homeOurWorkGridOne:hover .homeOurWorkTextWrapper, .homeOurWorkGridTwo:hover .homeOurWorkTextWrapper, .homeOurWorkGridThree:hover .homeOurWorkTextWrapper, .homeOurWorkGridFour:hover .homeOurWorkTextWrapper, .homeOurWorkGridFive:hover .homeOurWorkTextWrapper {
+  opacity: 1;
+}
+
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 176, 220, 0.9);
+}
+
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before {
+  opacity: 1;
+}
+
+.transparentBackground {
+  transition: all 0.5s;
+}
+
+.displayNone {
+  display: none;
+}
+
 .btn-primary {
   background-color: #00b0dc;
   border-color: #00b0dc;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-/* line 7, C:/Users/Michael/Dropbox/Web Design Business/Alacrity Website/Alacrity Website/static/sass/modules/_buttons.sass */
 .btn-primary:hover {
   background-color: #007D9A;
   border-color: #007D9A;
 }
 
-/*# sourceMappingURL=../css/main.map */
+.fontAwesomeIcon .fa {
+  font-size: 4rem;
+  color: #00b0dc;
+}

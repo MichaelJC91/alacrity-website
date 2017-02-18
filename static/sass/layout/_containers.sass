@@ -1,0 +1,70 @@
+@import "../base/_variables.sass"
+@import "../modules/_components.sass"
+
+//Heights
+.viewHeight100
+  height: 100vh
+
+// Paddings
+.containerTopPadding
+  padding-top: 20px
+
+.noPadding
+  padding: 0
+
+//Home Page - Our Work Grid System
+
+.homeOurWorkRow
+  position: relative
+
+.homeOurWorkGridOne
+  height: 70%
+  position: absolute
+  left: 0
+  top: 0
+  transition: 3s ease-in-out
+  @extend .overlay
+
+.homeOurWorkGridTwo
+  height: 50%
+  position: absolute
+  right: 0
+  top: 0
+  @extend .overlay
+
+
+.homeOurWorkGridThree
+  height: 30%
+  position: absolute
+  left: 25%
+  top: 70%
+  @extend .overlay
+
+.homeOurWorkGridFour
+  height: 30%
+  position: absolute
+  left: 0
+  top: 70%
+  @extend .overlay
+
+.homeOurWorkGridFive
+  height: 50%
+  position: absolute
+  right: 0
+  top: 50%
+  @extend .overlay
+
+.homeOurWorkTextWrapper
+  opacity: 0
+  transition: 0.5s ease-in-out
+  z-index: 9999
+  text-shadow: 1px 1px 1px $text-shadow
+
+.homeBenefits
+  border-top: 1px solid #ccc
+  padding: 30px
+
+// Contact Form Module
+.contactFooter
+  background-color: $contact-form-container-background
+  color: $white

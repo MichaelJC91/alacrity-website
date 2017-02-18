@@ -1,6 +1,40 @@
 @import "../base/_variables.sass"
+@import "../base/_mixins.sass"
 
 .seperator
   border-bottom: 3px solid $primary-color
   max-width: 10%
   margin: 40px auto
+
+.homeOurWorkSeperator
+  border-color: $white
+
+.backgroundImage
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+
+.overlay
+  &:hover .homeOurWorkTextWrapper
+    opacity: 1
+  &:before
+    opacity: 0
+    transition: 0.5s ease-in-out
+    content: ""
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    z-index: 1
+    background-color: $primary-color-overlay
+  &:hover
+    &:before
+      opacity: 1
+
+.transparentBackground
+  transition: all 0.5s
+
+.displayNone
+  display: none  
