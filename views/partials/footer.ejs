@@ -5,10 +5,12 @@
             <h1 class="text-center">Have a Project in Mind? Let's Talk! Coffee is on us!</h1>
           </div>
           <div class="col-md-12">
-            <form>
+            <form action="/mail" method="POST">
               <input class="form-control" type="text" name="name" placeholder="Michael Carniato" required />
-              <input class="form-control" type="text" name="email" placeholder="michael@alacritywebdev.com.au" required />
-              <input class="form-control form-control-danger" type="tel" name="name" placeholder="0425 487 689" required/>
+              <input class="form-control" type="email" name="email" placeholder="michael@alacritywebdev.com.au" required />
+              <input class="form-control form-control-danger" type="tel" name="phone" placeholder="0425 487 689" required/>
+              <input class="form-control form-control-danger" type="text" name="subject" placeholder="Subject" required/>
+              <input class="form-control form-control-danger" type="text" name="message" placeholder="Hi, I'd like to work together!" required/>
               <button class="btn btn-primary">Submit</button>
             </form>
           </div>
