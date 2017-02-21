@@ -1,11 +1,19 @@
 @import "../base/_variables.sass"
 
-.homeHeroImage
+.heroImage
   background: url('http://res.cloudinary.com/alacrity-web-development/image/upload/v1487381995/Alacrity_Web_Development_Hero_Overlay.jpg')
-  height: 100vh
-  background-size: cover
-  background-repeat: no-repeat
+  height: 100%
+  @extend .backgroundImage
+  color: $white
+
+.aboutHeroImage
+  background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/b_rgb:000,bo_0px_solid_rgb:000,o_55/v1487647264/Alacrity%20Web%20Development%20About.jpg")
+  height: 100%
+  @extend .backgroundImage
   color: $white
 
 .viewPortHeight
   height: 100vh
+
+.viewPortHeight60
+  height: 60vh
