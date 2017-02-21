@@ -20,12 +20,12 @@ router.post('/mail', function(req, res) {
   let contactFormData = {
     name: reqBody.name = sanitizer(reqBody.name),
     email: reqBody.email = sanitizer(reqBody.email),
-    phoneNumber: reqBody.phone = sanitizer(reqBody.phone),
+    phone: reqBody.phone = sanitizer(reqBody.phone),
     subject: reqBody.subject = sanitizer(reqBody.subject),
     message: reqBody.message = sanitizer(reqBody.message)
   }
 
-  let { name, email, phoneNumber, subject, message } = contactFormData;
+  let { name, email, phone, subject, message } = contactFormData;
 
   let mailOptions = {
       from: email + '<' + process.env.GOOGLE_EMAIL + '>', // sender address
@@ -33,7 +33,7 @@ router.post('/mail', function(req, res) {
       subject, // Subject line
       html: `From: ${ name }<br>
              Email: ${ email }<br>
-             Phone: ${ phoneNumber }<br><br>
+             Phone: ${ phone }<br><br>
              Message: ${ message }`
   };
 
@@ -43,7 +43,6 @@ router.post('/mail', function(req, res) {
     } else {
       res.redirect('/');
     }
-    
   });
 });
 

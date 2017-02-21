@@ -50,11 +50,68 @@
 .seperator {
   border-bottom: 3px solid #00b0dc;
   max-width: 10%;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
+/*White Seperator*/
 .homeOurWorkSeperator {
   border-color: #ffffff;
+}
+
+.topPadding10 {
+  padding-top: 10px;
+}
+
+.topPadding20 {
+  padding-top: 20px;
+}
+
+.topPadding5P {
+  padding-top: 5%;
+}
+
+.topPadding30 {
+  padding-top: 30px;
+}
+
+.topPadding50 {
+  padding-top: 50px;
+}
+
+.topPadding80 {
+  padding-top: 80px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.bottomPadding5P {
+  padding-bottom: 5%;
+}
+
+.bottomPadding20 {
+  padding-bottom: 20px;
+}
+
+.bottomPadding40 {
+  padding-bottom: 40px;
+}
+
+.bottomPadding50 {
+  padding-bottom: 50px;
+}
+
+.bottomPadding100 {
+  padding-bottom: 100px;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.paddingRight {
+  padding-right: 20px;
 }
 
 .backgroundImage {
@@ -93,16 +150,25 @@
   display: none;
 }
 
+.rightBorderSeperator {
+  border-right: 1px solid #ccc;
+}
+
 .viewHeight100 {
   height: 100vh;
 }
 
-.containerTopPadding {
-  padding-top: 20px;
+/* One Third Column*/
+.oneThird {
+  width: 33.3%;
 }
 
-.noPadding {
-  padding: 0;
+.oneFourth {
+  width: 25%;
+}
+
+.fullWidth {
+  width: 100%;
 }
 
 .homeOurWorkRow {
@@ -157,9 +223,212 @@
   padding: 30px;
 }
 
+.seperator {
+  border-bottom: 3px solid #00b0dc;
+  max-width: 10%;
+  margin: 20px auto;
+}
+
+/*White Seperator*/
+.homeOurWorkSeperator {
+  border-color: #ffffff;
+}
+
+.topPadding10 {
+  padding-top: 10px;
+}
+
+.topPadding20 {
+  padding-top: 20px;
+}
+
+.topPadding5P {
+  padding-top: 5%;
+}
+
+.topPadding30 {
+  padding-top: 30px;
+}
+
+.topPadding50 {
+  padding-top: 50px;
+}
+
+.topPadding80 {
+  padding-top: 80px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.bottomPadding5P {
+  padding-bottom: 5%;
+}
+
+.bottomPadding20 {
+  padding-bottom: 20px;
+}
+
+.bottomPadding40 {
+  padding-bottom: 40px;
+}
+
+.bottomPadding50 {
+  padding-bottom: 50px;
+}
+
+.bottomPadding100 {
+  padding-bottom: 100px;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.paddingRight {
+  padding-right: 20px;
+}
+
+.backgroundImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlay:hover .homeOurWorkTextWrapper, .homeOurWorkGridOne:hover .homeOurWorkTextWrapper, .homeOurWorkGridTwo:hover .homeOurWorkTextWrapper, .homeOurWorkGridThree:hover .homeOurWorkTextWrapper, .homeOurWorkGridFour:hover .homeOurWorkTextWrapper, .homeOurWorkGridFive:hover .homeOurWorkTextWrapper {
+  opacity: 1;
+}
+
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 176, 220, 0.9);
+}
+
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before {
+  opacity: 1;
+}
+
+.transparentBackground {
+  transition: all 0.5s;
+}
+
+.displayNone {
+  display: none;
+}
+
+.rightBorderSeperator {
+  border-right: 1px solid #ccc;
+}
+
 .contactFooter {
   background-color: #02101d;
   color: #ffffff;
+}
+
+.copyrightContainerBackground {
+  background-color: #010a11;
+}
+
+.copyrightContainer {
+  width: 1090px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.responseMessage {
+  background: #ffffff;
+  padding: 20px;
+  border: 2px solid #00b0dc;
+  border-radius: 4px;
+  position: relative;
+  color: #292b2c;
+}
+
+.responseMessageError {
+  background: #ff1b1b;
+  border: 2px solid rgba(255, 27, 27, 0.5);
+  color: #ffffff;
+}
+
+.contactInput {
+  border-bottom: 1px solid #ffffff;
+  margin: 10px;
+}
+
+.contactInput input {
+  background: none;
+  border: none;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.contactInput input:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+.contactInput ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.contactInput :-moz-placeholder {
+  color: #ffffff;
+}
+
+.contactInput ::-moz-placeholder {
+  color: #ffffff;
+}
+
+.contactInput :-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.ajaxLoader {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.ajaxLoader:after, .ajaxLoader:before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid transparent;
+  border-top-color: #00b0dc;
+  border-bottom-color: #00b0dc;
+  animation: spinny 1s linear infinite;
+}
+
+@keyframes spinny {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
 }
 
 body {
@@ -212,14 +481,81 @@ p {
   content: "\f068";
 }
 
+/*Copyright Text*/
+.copyrightText {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+.blackText {
+  color: #292b2c;
+}
+
 .seperator {
   border-bottom: 3px solid #00b0dc;
   max-width: 10%;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
+/*White Seperator*/
 .homeOurWorkSeperator {
   border-color: #ffffff;
+}
+
+.topPadding10 {
+  padding-top: 10px;
+}
+
+.topPadding20 {
+  padding-top: 20px;
+}
+
+.topPadding5P {
+  padding-top: 5%;
+}
+
+.topPadding30 {
+  padding-top: 30px;
+}
+
+.topPadding50 {
+  padding-top: 50px;
+}
+
+.topPadding80 {
+  padding-top: 80px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.bottomPadding5P {
+  padding-bottom: 5%;
+}
+
+.bottomPadding20 {
+  padding-bottom: 20px;
+}
+
+.bottomPadding40 {
+  padding-bottom: 40px;
+}
+
+.bottomPadding50 {
+  padding-bottom: 50px;
+}
+
+.bottomPadding100 {
+  padding-bottom: 100px;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.paddingRight {
+  padding-right: 20px;
 }
 
 .backgroundImage {
@@ -258,6 +594,10 @@ p {
   display: none;
 }
 
+.rightBorderSeperator {
+  border-right: 1px solid #ccc;
+}
+
 .btn-primary {
   background-color: #00b0dc;
   border-color: #00b0dc;
@@ -267,6 +607,14 @@ p {
 .btn-primary:hover {
   background-color: #007D9A;
   border-color: #007D9A;
+}
+
+.contactFooter button {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 23px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .fontAwesomeIcon .fa {

@@ -10,9 +10,6 @@ $(document).ready(function(){
 
   //Scroll function to change logo
   $(window).scroll(function() {
-    //Logo & scroll variables
-    const logoOne = 'http://res.cloudinary.com/alacrity-web-development/image/upload/v1487146066/Alacrity%20Web%20Development/Alacrity_Web_Development.png';
-    const logoTwo = 'http://res.cloudinary.com/alacrity-web-development/image/upload/v1487296555/Alacrity_Icon_White_-_Small.png'
     const scroll = $(window).scrollTop();
 
     //Change logo on scroll
@@ -26,11 +23,43 @@ $(document).ready(function(){
       $('.logo').show('slow');
     }
   });
-  
+
   //Home page - Benefits section toggle
   toggleFunction('.homeBenefitsOne');
   toggleFunction('.homeBenefitsTwo');
   toggleFunction('.homeBenefitsThree');
+
+  //Contact Form Logic
+  $("form").submit(function(event) {
+    event.preventDefault();
+    let formData = {
+      name: $('.name').val(),
+      email: $('.email').val(),
+      phone: $('.phone').val(),
+      subject: $('.subject').val(),
+      message: $('.message').val(),
+    }
+
+    $('.loader .icon').addClass('ajaxLoader');
+
+    $.ajax({
+      type: "POST",
+      url: "/mail",
+      data: JSON.stringify(formData),
+      contentType: "application/json; charset=UTF-8",
+      dataType: 'text',
+      success: function() {
+        $('.loader').hide();
+        $('.responseMessage').text('Message Sent Successfully! Thank you for contacting us!');
+        $('.contactMessage').delay(100).slideDown( 1000 );
+      },
+      error: function() {
+        $('.loader').hide();
+        $('.responseMessage').addClass('responseMessageError').text('Message Did Not Send. Try Again Later');
+        $('.contactMessage').delay(100).slideDown( 1000 );
+      }
+    });
+  });
 
 });
 

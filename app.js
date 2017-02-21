@@ -26,6 +26,12 @@ app.get('/', function(req, res) {
   res.render('index');
 });
 
+// About Route
+app.get('/about', function(req, res) {
+  res.render('about');
+})
+
+
 //Use Required Routes
 app.use(indexRoutes);
 

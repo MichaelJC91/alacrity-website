@@ -1,0 +1,83 @@
+@import "../base/_variables.sass"
+@import "../modules/_components.sass"
+@import "../base/_mixins.sass"
+
+// Contact Form Module
+.contactFooter
+  background-color: $contact-form-container-background
+  color: $white
+
+.copyrightContainerBackground
+  background-color: $copyright-background
+
+.copyrightContainer
+  width: 1090px
+  max-width: 100%
+  margin: 0 auto
+  padding-top: 15px
+  padding-bottom: 15px
+
+.responseMessage
+  background: $white
+  padding: 20px
+  border: 2px solid $primary-color
+  border-radius: 4px
+  position: relative
+  color: $text-color
+
+.responseMessageError
+  background: $contact-form-error
+  border: 2px solid $contact-form-error-border
+  color: $white
+
+//Contact Form Configuration
+.contactInput
+  border-bottom: 1px solid $white
+  margin: 10px
+
+  input
+    background: none
+    border: none
+    color: $white
+    padding-bottom: 10px
+    &:focus
+      outline: none
+      color: $white
+  ::-webkit-input-placeholder
+    color: $white
+  :-moz-placeholder
+    color: $white
+  ::-moz-placeholder
+    color: $white
+  :-ms-input-placeholder
+    color: $white
+
+//AJAX Loading Icon
+.ajaxLoader
+  width: 30px
+  height: 30px
+  background: $white
+  border-radius: 50%
+  position: relative
+  display: inline-block
+  &:after, &:before
+    content: ''
+    display: block
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    position: absolute
+    top: 0
+    left: 0
+    border: 2px solid transparent
+    border-top-color: $primary-color
+    border-bottom-color: $primary-color
+    animation: spinny 1s linear infinite
+
+@keyframes spinny
+  0%
+    transform: rotate(0deg) scale(1.1)
+  50%
+    transform: rotate(45deg) scale(1.4)
+  100%
+    transform: rotate(360deg) scale(1.1)

@@ -1,19 +1,66 @@
 @import "../base/_variables.sass"
 @import "../base/_mixins.sass"
 
+//Seperators
 .seperator
   border-bottom: 3px solid $primary-color
   max-width: 10%
-  margin: 40px auto
+  margin: 20px auto
 
+/*White Seperator*/
 .homeOurWorkSeperator
   border-color: $white
 
+// Paddings
+.topPadding10
+  padding-top: 10px
+
+.topPadding20
+  padding-top: 20px
+
+.topPadding5P
+  padding-top: 5%
+
+.topPadding30
+  padding-top: 30px
+
+.topPadding50
+  padding-top: 50px
+
+.topPadding80
+  padding-top: 80px
+
+.noPadding
+  padding: 0
+
+.bottomPadding5P
+  padding-bottom: 5%
+
+.bottomPadding20
+  padding-bottom: 20px
+
+.bottomPadding40
+  padding-bottom: 40px
+
+.bottomPadding50
+  padding-bottom: 50px
+
+.bottomPadding100
+  padding-bottom: 100px
+
+.paddingLeft
+  padding-left: 20px
+
+.paddingRight
+  padding-right: 20px
+
+//Background image configuration
 .backgroundImage
   background-size: cover
   background-repeat: no-repeat
   background-position: center center
 
+//Overlays
 .overlay
   &:hover .homeOurWorkTextWrapper
     opacity: 1
@@ -33,8 +80,14 @@
     &:before
       opacity: 1
 
+//Background Configurations
 .transparentBackground
   transition: all 0.5s
 
+//Display None Class
 .displayNone
-  display: none  
+  display: none
+
+//Borders
+.rightBorderSeperator
+  border-right: 1px solid $grey

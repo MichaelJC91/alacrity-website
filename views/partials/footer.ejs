@@ -1,22 +1,51 @@
-    <div class="container-fluid contactFooter">
+    <div class="container-fluid contactFooter topPadding5P">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <h1 class="text-center">Have a Project in Mind? Let's Talk! Coffee is on us!</h1>
           </div>
-          <div class="col-md-12">
+          <div class="col-md-12 topPadding50 bottomPadding100">
             <form action="/mail" method="POST">
-              <input class="form-control" type="text" name="name" placeholder="Michael Carniato" required />
-              <input class="form-control" type="email" name="email" placeholder="michael@alacritywebdev.com.au" required />
-              <input class="form-control form-control-danger" type="tel" name="phone" placeholder="0425 487 689" required/>
-              <input class="form-control form-control-danger" type="text" name="subject" placeholder="Subject" required/>
-              <input class="form-control form-control-danger" type="text" name="message" placeholder="Hi, I'd like to work together!" required/>
-              <button class="btn btn-primary">Submit</button>
+              <div class="d-flex flex-wrap justify-content-between">
+                <div class=" contactInput">
+                  <input class="name" type="text" name="name" placeholder="Full Name*" required />
+                </div>
+                <div class="contactInput">
+                  <input class="email" type="email" name="email" placeholder="Email*" required />
+                </div>
+                <div class="contactInput">
+                  <input class="phone" type="tel" name="phone" placeholder="Phone Number*" required/>
+                </div>
+                <div class="contactInput">
+                  <input class="subject" type="text" name="subject" placeholder="Subject*" required/>
+                </div>
+                <div class="fullWidth contactInput topPadding50">
+                  <input class="fullWidth message" type="text" name="message" placeholder="Describe Your Project in a few Sentences" required/>
+                </div>
+                <div class="fullWidth topPadding30 bottomPadding20">
+                  <button class="btn btn-primary contactFormButton textShadow">Submit</button>
+                </div>
+                <div class="fullWidth text-center loader">
+                  <div class="icon">
+
+                  </div>
+                </div>
+                <div class="contactMessage text-center fullWidth displayNone">
+                  <h5 class="responseMessage"></h5>
+                </div>
             </form>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container-fluid copyrightContainerBackground">
+      <div class="row copyrightContainer">
+        <div class="copyrightText">
+          <span>Copyright @Alacrity Web Development <%= new Date().getFullYear(); %>. All Rights Reserved</span>
+        </div>
+    </div>
+  </div>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
