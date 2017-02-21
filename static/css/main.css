@@ -131,7 +131,7 @@
   padding-right: 20px;
 }
 
-.topBottomPadding30 {
+.topBottomPadding30, .aboutServiceItemWrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -139,6 +139,11 @@
 .leftRightPadding50 {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.leftRightPadding30, .aboutServiceItemWrapper {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .backgroundImage, .heroImage, .aboutHeroImage, .aboutWhoWeAre {
@@ -179,6 +184,15 @@
 
 .rightBorderSeperator {
   border-right: 1px solid #ccc;
+}
+
+.leftRightBorderSeperator {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.topBorderSeperator {
+  border-top: 1px solid;
 }
 
 .viewHeight100 {
@@ -252,6 +266,15 @@
 
 .aboutWhoWeAre {
   background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/b_rgb:000,bo_0px_solid_rgb:000,o_55/v1487653776/Alacrity_Web_Development_-_Who_We_Are_yh5se6.jpg");
+  color: #ffffff;
+}
+
+.servicesContainer {
+  background-color: #00b0dc;
+  color: #ffffff;
+}
+
+.servicesContainer .fontAwesomeIcon .fa {
   color: #ffffff;
 }
 
@@ -331,7 +354,7 @@
   padding-right: 20px;
 }
 
-.topBottomPadding30 {
+.topBottomPadding30, .aboutServiceItemWrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -339,6 +362,11 @@
 .leftRightPadding50 {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.leftRightPadding30, .aboutServiceItemWrapper {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .backgroundImage, .heroImage, .aboutHeroImage, .aboutWhoWeAre {
@@ -379,6 +407,15 @@
 
 .rightBorderSeperator {
   border-right: 1px solid #ccc;
+}
+
+.leftRightBorderSeperator {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.topBorderSeperator {
+  border-top: 1px solid;
 }
 
 .contactFooter {
@@ -618,7 +655,7 @@ p {
   padding-right: 20px;
 }
 
-.topBottomPadding30 {
+.topBottomPadding30, .aboutServiceItemWrapper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -626,6 +663,11 @@ p {
 .leftRightPadding50 {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.leftRightPadding30, .aboutServiceItemWrapper {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .backgroundImage, .heroImage, .aboutHeroImage, .aboutWhoWeAre {
@@ -666,6 +708,15 @@ p {
 
 .rightBorderSeperator {
   border-right: 1px solid #ccc;
+}
+
+.leftRightBorderSeperator {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.topBorderSeperator {
+  border-top: 1px solid;
 }
 
 .btn-primary {
