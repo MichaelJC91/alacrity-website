@@ -3,7 +3,6 @@ const app = express();
 const mongoose = require('mongoose');
 const expressSanitizer = require('express-sanitizer');
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
 
 //Required Routes
 const indexRoutes = require('./routes/contact/contact');
@@ -22,15 +21,29 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
 // Root Route
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.render('index');
 });
 
 // About Route
-app.get('/about', function(req, res) {
+app.get('/about', (req, res) => {
   res.render('about');
 });
 
+//Our Work Route
+app.get('/our-work', (req, res) => {
+  res.render('our-work');
+});
+
+//Blog Page Route
+app.get('/blog', (req, res) => {
+  res.render('blog');
+});
+
+//Contact Page
+app.get('/contact-us', (req, res) => {
+  res.render('contact-us');
+});
 
 //Use Required Routes
 app.use(indexRoutes);
