@@ -13,15 +13,16 @@ $(document).ready(function(){
     const scroll = $(window).scrollTop();
 
     //Change logo on scroll
-    if(scroll > 0) {
-      $('header').addClass('sticky');
-      $('.logo').hide('slow');
-      $('.fixedLogo').show('slow');
-    } else {
-      $('header').removeClass('sticky').addClass('transparentBackground');
-      $('.fixedLogo').hide('slow');
-      $('.logo').show('slow');
-    }
+      if(scroll) {
+        console.log("You Scrolled");
+        $('header').addClass('sticky');
+        $('.logo').hide('slow');
+        $('.fixedLogo').show('slow');
+      } else {
+        $('header').removeClass('sticky').addClass('transparentBackground');
+        $('.fixedLogo').hide('slow');
+        $('.logo').show('slow');
+      }
   });
 
   //Home page - Benefits section toggle
@@ -60,7 +61,7 @@ $(document).ready(function(){
       }
     });
   });
-
+  setNavigation();
 });
 
 //Toggle function
@@ -71,5 +72,16 @@ function toggleFunction(target) {
    } else {
      $(target).removeClass('activeToggle').addClass('notActive');
    }
+  });
+}
+
+//Add Current Menu Item to Active Menu Item
+function setNavigation() {
+  let path = window.location.pathname;
+  $('.nav a').each(function(link) {
+    let href = $(this).attr('href');
+    if(href === path) {
+      $(this).addClass('activeNavLink')
+    }
   });
 }

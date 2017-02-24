@@ -17,8 +17,23 @@
 
 .navbar-nav .nav-item .nav-link {
   color: #ffffff;
-  padding-right: 2rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  transition: none;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.activeNavLink {
+  border-bottom: 2px solid #ffffff;
+  transition: none;
+}
+
+.nav-item {
   padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .navbar-brand {
@@ -44,6 +59,12 @@
 .aboutHeroImage {
   background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/b_rgb:000,bo_0px_solid_rgb:000,o_55/v1487647264/Alacrity%20Web%20Development%20About.jpg");
   height: 100%;
+  color: #ffffff;
+}
+
+.ourWorkHeroImage {
+  height: 100%;
+  background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/b_rgb:000,bo_0px_solid_rgb:000,o_55/v1487656553/Alacrity%20Web%20Development%20Our%20Work%20Hero%20Image.jpg");
   color: #ffffff;
 }
 
@@ -146,17 +167,17 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.overlay:hover .homeOurWorkTextWrapper, .homeOurWorkGridOne:hover .homeOurWorkTextWrapper, .homeOurWorkGridTwo:hover .homeOurWorkTextWrapper, .homeOurWorkGridThree:hover .homeOurWorkTextWrapper, .homeOurWorkGridFour:hover .homeOurWorkTextWrapper, .homeOurWorkGridFive:hover .homeOurWorkTextWrapper {
+.overlay:hover .overlayTextWrapper, .homeOurWorkGridOne:hover .overlayTextWrapper, .homeOurWorkGridTwo:hover .overlayTextWrapper, .homeOurWorkGridThree:hover .overlayTextWrapper, .homeOurWorkGridFour:hover .overlayTextWrapper, .homeOurWorkGridFive:hover .overlayTextWrapper, .ourWorkItem:hover .overlayTextWrapper {
   opacity: 1;
 }
 
-.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before {
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before, .ourWorkItem:before {
   opacity: 0;
   transition: 0.5s ease-in-out;
   content: "";
@@ -170,8 +191,15 @@
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before {
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before, .ourWorkItem:hover:before {
   opacity: 1;
+}
+
+.overlayTextWrapper {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 9999;
+  text-shadow: 1px 1px 1px #313131;
 }
 
 .transparentBackground {
@@ -197,6 +225,10 @@
 
 .viewHeight100 {
   height: 100vh;
+}
+
+.viewHeight50 {
+  height: 50vh;
 }
 
 /* One Third Column*/
@@ -252,13 +284,6 @@
   top: 50%;
 }
 
-.homeOurWorkTextWrapper {
-  opacity: 0;
-  transition: 0.5s ease-in-out;
-  z-index: 9999;
-  text-shadow: 1px 1px 1px #313131;
-}
-
 .homeBenefits {
   border-top: 1px solid #ccc;
   padding: 30px;
@@ -276,6 +301,24 @@
 
 .servicesContainer .fontAwesomeIcon .fa {
   color: #ffffff;
+}
+
+.ourWorkRow {
+  color: #ffffff;
+}
+
+.ourWorkText {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.ourWorkText .fontAwesomeIcon .fa {
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .seperator, .seperatorLeft {
@@ -369,17 +412,17 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.overlay:hover .homeOurWorkTextWrapper, .homeOurWorkGridOne:hover .homeOurWorkTextWrapper, .homeOurWorkGridTwo:hover .homeOurWorkTextWrapper, .homeOurWorkGridThree:hover .homeOurWorkTextWrapper, .homeOurWorkGridFour:hover .homeOurWorkTextWrapper, .homeOurWorkGridFive:hover .homeOurWorkTextWrapper {
+.overlay:hover .overlayTextWrapper, .homeOurWorkGridOne:hover .overlayTextWrapper, .homeOurWorkGridTwo:hover .overlayTextWrapper, .homeOurWorkGridThree:hover .overlayTextWrapper, .homeOurWorkGridFour:hover .overlayTextWrapper, .homeOurWorkGridFive:hover .overlayTextWrapper, .ourWorkItem:hover .overlayTextWrapper {
   opacity: 1;
 }
 
-.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before {
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before, .ourWorkItem:before {
   opacity: 0;
   transition: 0.5s ease-in-out;
   content: "";
@@ -393,8 +436,15 @@
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before {
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before, .ourWorkItem:hover:before {
   opacity: 1;
+}
+
+.overlayTextWrapper {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 9999;
+  text-shadow: 1px 1px 1px #313131;
 }
 
 .transparentBackground {
@@ -670,17 +720,17 @@ p {
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.overlay:hover .homeOurWorkTextWrapper, .homeOurWorkGridOne:hover .homeOurWorkTextWrapper, .homeOurWorkGridTwo:hover .homeOurWorkTextWrapper, .homeOurWorkGridThree:hover .homeOurWorkTextWrapper, .homeOurWorkGridFour:hover .homeOurWorkTextWrapper, .homeOurWorkGridFive:hover .homeOurWorkTextWrapper {
+.overlay:hover .overlayTextWrapper, .homeOurWorkGridOne:hover .overlayTextWrapper, .homeOurWorkGridTwo:hover .overlayTextWrapper, .homeOurWorkGridThree:hover .overlayTextWrapper, .homeOurWorkGridFour:hover .overlayTextWrapper, .homeOurWorkGridFive:hover .overlayTextWrapper, .ourWorkItem:hover .overlayTextWrapper {
   opacity: 1;
 }
 
-.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before {
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before, .ourWorkItem:before {
   opacity: 0;
   transition: 0.5s ease-in-out;
   content: "";
@@ -694,8 +744,15 @@ p {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before {
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before, .ourWorkItem:hover:before {
   opacity: 1;
+}
+
+.overlayTextWrapper {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 9999;
+  text-shadow: 1px 1px 1px #313131;
 }
 
 .transparentBackground {

@@ -5,6 +5,9 @@
 .viewHeight100
   height: 100vh
 
+.viewHeight50
+  height: 50vh
+
 //Column Widths
 
 /* One Third Column*/
@@ -58,12 +61,6 @@
   top: 50%
   @extend .overlay
 
-.homeOurWorkTextWrapper
-  opacity: 0
-  transition: 0.5s ease-in-out
-  z-index: 9999
-  text-shadow: 1px 1px 1px $text-shadow
-
 .homeBenefits
   border-top: 1px solid #ccc
   padding: 30px
@@ -84,3 +81,23 @@
 .aboutServiceItemWrapper
   @extend .topBottomPadding30
   @extend .leftRightPadding30
+
+//Our Work Page
+
+.ourWorkRow
+  color: $white
+
+.ourWorkText
+  position: absolute
+  left: 0
+  top: 50%
+  width: 100%
+  color: $white
+  transform: translateY(-50%)
+
+  .fontAwesomeIcon .fa
+    color: $white
+    font-size: 2rem
+
+.ourWorkItem
+  @extend .overlay
