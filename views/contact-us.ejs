@@ -1,0 +1,71 @@
+<% include ./partials/head %>
+    <meta charset="utf-8">
+    <meta name=”description” content="Alacrity Web Developement specialize in website design, ">
+    <title>Alacrity Web Development | Contact</title>
+</head>
+<% include ./partials/header %>
+<div class="container-fluid viewPortHeight60 aboutHeroImage">
+  <div class="container">
+    <div class="row viewPortHeight60 d-flex justify-content-center align-items-center">
+      <div class="col-md-12 text-center animated fadeInLeft">
+        <h1 class="textShadow">Contact Us</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container topBottomPadding30">
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h2>GIVE US A SHOUT</h2>
+      <h4>Use the form below to drop us an email. <br />Old-fashioned phone calls work too</h4>
+    </div>
+  </div>
+</div>
+<div class="container bottomPadding30">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <div class="row text-center contactFirstCol">
+        <div class="col-md-6 contactPageContactDetails contactPageLocation">
+          <span class="fontAwesomeIcon"><i class="fa fa-home" aria-hidden="true"></i></span>
+          <h4>Location</h4>
+          <p>Melbourne, Australia</p>
+        </div>
+        <div class="col-md-6 contactPageContactDetails">
+          <span class="fontAwesomeIcon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+          <h4>Phone</h4>
+          <p>0424 158 107</p>
+        </div>
+        <div class="col-md-6 contactPageContactDetails contactPageHours">
+          <span class="fontAwesomeIcon"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+          <h4>Hours</h4>
+          <p>Mon - Sat<br /> 10am - 6pm</p>
+        </div>
+        <div class="col-md-6 contactPageContactDetails contactPageEmail">
+          <span class="fontAwesomeIcon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+          <h4>Email</h4>
+          <p>michael@<br />alacritywebdev.com.au</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 googleMapWrapper">
+      <div id="googleMap" style="width: 100%;"></div>
+    </div>
+  </div>
+</div>
+<script>
+  function initMap() {
+    var melbourne = {lat: -37.8136, lng: 144.9631};
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+      zoom: 11,
+      center: melbourne
+    });
+    var marker = new google.maps.Marker({
+      position: melbourne,
+      map: map
+    });
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_2w8HU4SOPJNlfDs4TAdza1y7qToH__E&callback=initMap">
+</script>
+<% include ./partials/footer %>

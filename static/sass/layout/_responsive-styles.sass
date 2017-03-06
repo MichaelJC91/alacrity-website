@@ -1,0 +1,52 @@
+@import "../modules/components.sass"
+
+@media (min-width: 768px)
+  .contactFirstCol
+    .contactPageHours, .contactPageEmail
+      border-top: 1px solid $grey
+    .contactPageHours, .contactPageLocation
+      border-right: 1px solid $grey
+
+  .homeOurWorkRow
+    height: 100vh
+  .homeOurWorkGridOne
+    height: 70%
+    position: absolute
+    left: 0
+    top: 0
+  .homeOurWorkGridTwo
+    height: 50%
+    position: absolute
+    right: 0
+    top: 0
+  .homeOurWorkGridThree
+    height: 30%
+    position: absolute
+    left: 25%
+    top: 70%
+  .homeOurWorkGridFour
+    height: 30%
+    position: absolute
+    left: 0
+    top: 70%
+  .homeOurWorkGridFive
+    height: 50%
+    position: absolute
+    right: 0
+    top: 50%
+
+@media (max-width: 768px)
+  .googleMapWrapper
+    padding: 0
+  .contactPageContactDetails
+    margin-top: 10px
+    margin-bottom: 10px
+  .homeOurWorkRow
+    a
+      width: 100%
+    .homeOurWorkGridOne,
+    .homeOurWorkGridTwo,
+    .homeOurWorkGridThree,
+    .homeOurWorkGridFour,
+    .homeOurWorkGridFive
+      height: 300px

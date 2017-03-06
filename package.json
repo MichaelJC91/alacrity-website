@@ -18,10 +18,24 @@
   "homepage": "https://github.com/MichaelJC91/alacrity-website#readme",
   "dependencies": {
     "body-parser": "^1.16.1",
+    "counterup": "^1.0.2",
+    "countup.js": "^1.8.1",
     "ejs": "^2.5.5",
     "express": "^4.14.1",
     "express-sanitizer": "^1.0.2",
+    "jcslider": "^1.2.7",
+    "jquery": "^3.1.1",
+    "jquery.counterup": "^2.1.0",
     "mongoose": "^4.8.2",
-    "nodemailer": "^3.1.3"
+    "nodemailer": "^3.1.3",
+    "slick-carousel": "^1.6.0",
+    "tether": "^1.4.0",
+    "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "testimonial": "^2.0.1"
   }
 }

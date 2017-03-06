@@ -20,50 +20,62 @@
 .fullWidth
   width: 100%
 
+
+//Home Page
+.statisticsContainer
+  background: $primary-color
+  color: $white
+  text-shadow: 1px 1px 1px $black
+  .statisticsContainerBox
+    // background: rgba(255, 255, 255, 1)
+    border: 2px solid $white
+    padding: 50px
+    box-shadow: $box-shadow
+    color: $white
+    text-shadow: 1px 1px 1px $text-shadow
+
+.homeBenefits
+  border-top: 1px solid #ccc
+  padding: 30px
+
+.testimonials
+  color: $white
+  text-shadow: 1px 1px 1px $black
+  // padding: 50px
+  background: rgba(0, 0, 0, 0.1)
+  p
+    font-size: 1.3rem
+  .singleTestimonial
+    padding: 50px
+    a
+      border-bottom: 2px solid
+      color: $white
+    &:hover
+      color: $white
+
 //Home Page - Our Work Grid System
 .homeOurWorkRow
   position: relative
 
 .homeOurWorkGridOne
-  height: 70%
-  position: absolute
-  left: 0
-  top: 0
-  transition: 3s ease-in-out
   @extend .overlay
 
 .homeOurWorkGridTwo
-  height: 50%
-  position: absolute
-  right: 0
-  top: 0
   @extend .overlay
 
 
 .homeOurWorkGridThree
-  height: 30%
-  position: absolute
-  left: 25%
-  top: 70%
   @extend .overlay
 
 .homeOurWorkGridFour
-  height: 30%
-  position: absolute
-  left: 0
-  top: 70%
   @extend .overlay
 
 .homeOurWorkGridFive
-  height: 50%
-  position: absolute
-  right: 0
-  top: 50%
   @extend .overlay
 
-.homeBenefits
-  border-top: 1px solid #ccc
-  padding: 30px
+//Testimonial Contact Button
+.btn-primary.testimonialContact
+  border: 2px solid $white
 
 //About Page
 
@@ -101,3 +113,15 @@
 
 .ourWorkItem
   @extend .overlay
+
+
+//Contact Page
+.contactFirstCol
+  p
+    font-size: 1rem
+  .fontAwesomeIcon .fa
+    font-size: 3rem
+    margin-bottom: 10px
+  .contactPageContactDetails
+    padding: 50px
+    background: $light-grey

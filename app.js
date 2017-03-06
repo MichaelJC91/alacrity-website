@@ -9,6 +9,7 @@ const indexRoutes = require('./routes/contact/contact');
 
 //Set Static Folders
 app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/dist'));
 
 //Express Sanitizer Middleware
 app.use(expressSanitizer());

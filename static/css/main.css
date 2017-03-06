@@ -50,6 +50,37 @@
   box-shadow: 0 1px 3px #7b7b7b;
 }
 
+.sticky .topSecondaryNavbar {
+  background-color: rgba(0, 176, 220, 0.9);
+  transition: 0.5s ease-in-out;
+}
+
+.topSecondaryNavbar {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+}
+
+.topSecondaryNavbar .nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.topSecondaryNavbar .nav-item .nav-link {
+  padding: 5px;
+}
+
+.topSecondaryNavbar .nav-item .nav-link:hover {
+  border-bottom: none;
+}
+
+.topSecondaryNavbarList {
+  flex-direction: row;
+}
+
+.navbarContactIcon {
+  padding-right: 10px;
+}
+
 .heroImage {
   background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487381995/Alacrity_Web_Development_Hero_Overlay.jpg");
   height: 100%;
@@ -132,6 +163,10 @@
   padding-bottom: 20px;
 }
 
+.bottomPadding30 {
+  padding-bottom: 30px;
+}
+
 .bottomPadding40 {
   padding-bottom: 40px;
 }
@@ -155,6 +190,11 @@
 .topBottomPadding30, .aboutServiceItemWrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.topBottomPadding50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .leftRightPadding50 {
@@ -223,6 +263,10 @@
   border-top: 1px solid;
 }
 
+.maxHeight {
+  max-height: 100%;
+}
+
 .viewHeight100 {
   height: 100vh;
 }
@@ -244,49 +288,54 @@
   width: 100%;
 }
 
-.homeOurWorkRow {
-  position: relative;
+.statisticsContainer {
+  background: #00b0dc;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
 }
 
-.homeOurWorkGridOne {
-  height: 70%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: 3s ease-in-out;
-}
-
-.homeOurWorkGridTwo {
-  height: 50%;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.homeOurWorkGridThree {
-  height: 30%;
-  position: absolute;
-  left: 25%;
-  top: 70%;
-}
-
-.homeOurWorkGridFour {
-  height: 30%;
-  position: absolute;
-  left: 0;
-  top: 70%;
-}
-
-.homeOurWorkGridFive {
-  height: 50%;
-  position: absolute;
-  right: 0;
-  top: 50%;
+.statisticsContainer .statisticsContainerBox {
+  border: 2px solid #ffffff;
+  padding: 50px;
+  box-shadow: 0 1px 3px #7b7b7b;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #313131;
 }
 
 .homeBenefits {
   border-top: 1px solid #ccc;
   padding: 30px;
+}
+
+.testimonials {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.testimonials p {
+  font-size: 1.3rem;
+}
+
+.testimonials .singleTestimonial {
+  padding: 50px;
+}
+
+.testimonials .singleTestimonial a {
+  border-bottom: 2px solid;
+  color: #ffffff;
+}
+
+.testimonials .singleTestimonial:hover {
+  color: #ffffff;
+}
+
+.homeOurWorkRow {
+  position: relative;
+}
+
+.btn-primary.testimonialContact {
+  border: 2px solid #ffffff;
 }
 
 .aboutWhoWeAre {
@@ -319,6 +368,20 @@
 .ourWorkText .fontAwesomeIcon .fa {
   color: #ffffff;
   font-size: 2rem;
+}
+
+.contactFirstCol p {
+  font-size: 1rem;
+}
+
+.contactFirstCol .fontAwesomeIcon .fa {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contactFirstCol .contactPageContactDetails {
+  padding: 50px;
+  background: #eee;
 }
 
 .seperator, .seperatorLeft {
@@ -377,6 +440,10 @@
   padding-bottom: 20px;
 }
 
+.bottomPadding30 {
+  padding-bottom: 30px;
+}
+
 .bottomPadding40 {
   padding-bottom: 40px;
 }
@@ -400,6 +467,11 @@
 .topBottomPadding30, .aboutServiceItemWrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.topBottomPadding50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .leftRightPadding50 {
@@ -466,6 +538,10 @@
 
 .topBorderSeperator {
   border-top: 1px solid;
+}
+
+.maxHeight {
+  max-height: 100%;
 }
 
 .contactFooter {
@@ -566,6 +642,228 @@
   }
   100% {
     transform: rotate(360deg) scale(1.1);
+  }
+}
+
+.seperator, .seperatorLeft {
+  border-bottom: 3px solid #00b0dc;
+  max-width: 10%;
+  margin: 20px auto;
+}
+
+.seperatorLeft {
+  margin: 20px 0;
+  max-width: 100px;
+}
+
+/*White Seperator*/
+.whiteSeperator {
+  border-color: #ffffff;
+}
+
+.topPadding10 {
+  padding-top: 10px;
+}
+
+.topPadding20 {
+  padding-top: 20px;
+}
+
+.topPadding5P {
+  padding-top: 5%;
+}
+
+.topPadding30 {
+  padding-top: 30px;
+}
+
+.topPadding50 {
+  padding-top: 50px;
+}
+
+.topPadding80 {
+  padding-top: 80px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.bottomPadding5P {
+  padding-bottom: 5%;
+}
+
+.bottomPadding10 {
+  padding-bottom: 10px;
+}
+
+.bottomPadding20 {
+  padding-bottom: 20px;
+}
+
+.bottomPadding30 {
+  padding-bottom: 30px;
+}
+
+.bottomPadding40 {
+  padding-bottom: 40px;
+}
+
+.bottomPadding50 {
+  padding-bottom: 50px;
+}
+
+.bottomPadding100 {
+  padding-bottom: 100px;
+}
+
+.paddingLeft {
+  padding-left: 20px;
+}
+
+.paddingRight {
+  padding-right: 20px;
+}
+
+.topBottomPadding30, .aboutServiceItemWrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.topBottomPadding50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.leftRightPadding50 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.leftRightPadding30, .aboutServiceItemWrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.overlay:hover .overlayTextWrapper, .homeOurWorkGridOne:hover .overlayTextWrapper, .homeOurWorkGridTwo:hover .overlayTextWrapper, .homeOurWorkGridThree:hover .overlayTextWrapper, .homeOurWorkGridFour:hover .overlayTextWrapper, .homeOurWorkGridFive:hover .overlayTextWrapper, .ourWorkItem:hover .overlayTextWrapper {
+  opacity: 1;
+}
+
+.overlay:before, .homeOurWorkGridOne:before, .homeOurWorkGridTwo:before, .homeOurWorkGridThree:before, .homeOurWorkGridFour:before, .homeOurWorkGridFive:before, .ourWorkItem:before {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 176, 220, 0.9);
+}
+
+.overlay:hover:before, .homeOurWorkGridOne:hover:before, .homeOurWorkGridTwo:hover:before, .homeOurWorkGridThree:hover:before, .homeOurWorkGridFour:hover:before, .homeOurWorkGridFive:hover:before, .ourWorkItem:hover:before {
+  opacity: 1;
+}
+
+.overlayTextWrapper {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  z-index: 9999;
+  text-shadow: 1px 1px 1px #313131;
+}
+
+.transparentBackground {
+  transition: all 0.5s;
+}
+
+.displayNone {
+  display: none;
+}
+
+.rightBorderSeperator {
+  border-right: 1px solid #ccc;
+}
+
+.leftRightBorderSeperator {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.topBorderSeperator {
+  border-top: 1px solid;
+}
+
+.maxHeight {
+  max-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .contactFirstCol .contactPageHours, .contactFirstCol .contactPageEmail {
+    border-top: 1px solid #ccc;
+  }
+  .contactFirstCol .contactPageHours, .contactFirstCol .contactPageLocation {
+    border-right: 1px solid #ccc;
+  }
+  .homeOurWorkRow {
+    height: 100vh;
+  }
+  .homeOurWorkGridOne {
+    height: 70%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .homeOurWorkGridTwo {
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .homeOurWorkGridThree {
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 70%;
+  }
+  .homeOurWorkGridFour {
+    height: 30%;
+    position: absolute;
+    left: 0;
+    top: 70%;
+  }
+  .homeOurWorkGridFive {
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .googleMapWrapper {
+    padding: 0;
+  }
+  .contactPageContactDetails {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .homeOurWorkRow a {
+    width: 100%;
+  }
+  .homeOurWorkRow .homeOurWorkGridOne,
+  .homeOurWorkRow .homeOurWorkGridTwo,
+  .homeOurWorkRow .homeOurWorkGridThree,
+  .homeOurWorkRow .homeOurWorkGridFour,
+  .homeOurWorkRow .homeOurWorkGridFive {
+    height: 300px;
   }
 }
 
@@ -685,6 +983,10 @@ p {
   padding-bottom: 20px;
 }
 
+.bottomPadding30 {
+  padding-bottom: 30px;
+}
+
 .bottomPadding40 {
   padding-bottom: 40px;
 }
@@ -708,6 +1010,11 @@ p {
 .topBottomPadding30, .aboutServiceItemWrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.topBottomPadding50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .leftRightPadding50 {
@@ -774,6 +1081,10 @@ p {
 
 .topBorderSeperator {
   border-top: 1px solid;
+}
+
+.maxHeight {
+  max-height: 100%;
 }
 
 .btn-primary {
