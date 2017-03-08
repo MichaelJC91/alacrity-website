@@ -9,11 +9,15 @@ import contactForm from './contactForm';
 import toggleFunction from './toggleFunction';
 import header from './header';
 import slickCarousel from 'slick-carousel';
+import mobile from './mobile';
 
 export default $(document).ready(() => {
 
   // Run header check function
-  header()
+  header();
+
+  //Run Mobile function
+  mobile();
 
   // Check which window matches the url
   // then put border underneath links with matching url
@@ -37,7 +41,7 @@ export default $(document).ready(() => {
 
   // Waypointjs Stats
   $('.counter').counterUp({
-      delay: 40,
+      delay: 10,
       time: 800
   });
 

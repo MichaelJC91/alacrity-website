@@ -1,3 +1,9 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css");
 .transparentBar {
   position: fixed;
   background-color: transparent;
@@ -73,12 +79,16 @@
   border-bottom: none;
 }
 
-.topSecondaryNavbarList {
-  flex-direction: row;
-}
-
 .navbarContactIcon {
   padding-right: 10px;
+}
+
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar {
+  background-color: rgba(0, 176, 220, 0.9);
+}
+
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar {
+  background-color: rgba(0, 176, 220, 0.9);
 }
 
 .heroImage {
@@ -116,6 +126,10 @@
 .seperatorLeft {
   margin: 20px 0;
   max-width: 100px;
+}
+
+.navSpacer {
+  height: 177px;
 }
 
 /*White Seperator*/
@@ -187,7 +201,7 @@
   padding-right: 20px;
 }
 
-.topBottomPadding30, .aboutServiceItemWrapper {
+.topBottomPadding30 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -202,7 +216,7 @@
   padding-right: 50px;
 }
 
-.leftRightPadding30, .aboutServiceItemWrapper {
+.leftRightPadding30 {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -248,10 +262,6 @@
 
 .displayNone {
   display: none;
-}
-
-.rightBorderSeperator {
-  border-right: 1px solid #ccc;
 }
 
 .leftRightBorderSeperator {
@@ -317,16 +327,12 @@
   font-size: 1.3rem;
 }
 
-.testimonials .singleTestimonial {
-  padding: 50px;
-}
-
-.testimonials .singleTestimonial a {
+.testimonials a {
   border-bottom: 2px solid;
   color: #ffffff;
 }
 
-.testimonials .singleTestimonial:hover {
+.testimonials:hover {
   color: #ffffff;
 }
 
@@ -395,6 +401,10 @@
   max-width: 100px;
 }
 
+.navSpacer {
+  height: 177px;
+}
+
 /*White Seperator*/
 .whiteSeperator {
   border-color: #ffffff;
@@ -464,7 +474,7 @@
   padding-right: 20px;
 }
 
-.topBottomPadding30, .aboutServiceItemWrapper {
+.topBottomPadding30 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -479,7 +489,7 @@
   padding-right: 50px;
 }
 
-.leftRightPadding30, .aboutServiceItemWrapper {
+.leftRightPadding30 {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -525,10 +535,6 @@
 
 .displayNone {
   display: none;
-}
-
-.rightBorderSeperator {
-  border-right: 1px solid #ccc;
 }
 
 .leftRightBorderSeperator {
@@ -656,6 +662,10 @@
   max-width: 100px;
 }
 
+.navSpacer {
+  height: 177px;
+}
+
 /*White Seperator*/
 .whiteSeperator {
   border-color: #ffffff;
@@ -725,7 +735,7 @@
   padding-right: 20px;
 }
 
-.topBottomPadding30, .aboutServiceItemWrapper {
+.topBottomPadding30 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -740,7 +750,7 @@
   padding-right: 50px;
 }
 
-.leftRightPadding30, .aboutServiceItemWrapper {
+.leftRightPadding30 {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -786,10 +796,6 @@
 
 .displayNone {
   display: none;
-}
-
-.rightBorderSeperator {
-  border-right: 1px solid #ccc;
 }
 
 .leftRightBorderSeperator {
@@ -845,6 +851,32 @@
     right: 0;
     top: 50%;
   }
+  .rightBorderSeperator {
+    border-right: 1px solid #ccc;
+  }
+  .testimonials .singleTestimonial {
+    padding: 50px;
+  }
+  .aboutServiceItemWrapper {
+    padding: 30px;
+  }
+  .aboutServiceItemWrapper:nth-of-type(3) {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .aboutServiceItemWrapper:nth-of-type(n + 5) {
+    border-top: 1px solid;
+  }
+  .aboutServiceItemWrapper:nth-of-type(6) {
+    border-left: 1px solid;
+    border-right: 1px solid;
+  }
+  .aboutServiceItemWrapper h4 {
+    font-weight: 700;
+  }
+  .aboutBelieveIn {
+    padding: 10px 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -864,6 +896,30 @@
   .homeOurWorkRow .homeOurWorkGridFour,
   .homeOurWorkRow .homeOurWorkGridFive {
     height: 300px;
+  }
+  .contactFooter input {
+    text-align: center;
+  }
+  .statisticsContainer .statisticsContainerBox {
+    margin-top: 10px;
+  }
+  .testimonials .singleTestimonial {
+    padding: 20px;
+  }
+  .homeServiceSummaryContainer {
+    padding-top: 20px;
+  }
+  .heroImage h1 {
+    font-size: 24px;
+  }
+  .heroImage h2 {
+    font-size: 20px;
+  }
+  .aboutBelieveIn {
+    padding-top: 20px;
+  }
+  .aboutServiceItemWrapper {
+    padding: 10px 0;
   }
 }
 
@@ -923,6 +979,16 @@ p {
   font-size: 0.8rem;
 }
 
+.legalLinks {
+  list-style: none;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.legalLinks li {
+  padding: 0 5px;
+}
+
 .blackText {
   color: #292b2c;
 }
@@ -936,6 +1002,10 @@ p {
 .seperatorLeft {
   margin: 20px 0;
   max-width: 100px;
+}
+
+.navSpacer {
+  height: 177px;
 }
 
 /*White Seperator*/
@@ -1007,7 +1077,7 @@ p {
   padding-right: 20px;
 }
 
-.topBottomPadding30, .aboutServiceItemWrapper {
+.topBottomPadding30 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -1022,7 +1092,7 @@ p {
   padding-right: 50px;
 }
 
-.leftRightPadding30, .aboutServiceItemWrapper {
+.leftRightPadding30 {
   padding-left: 30px;
   padding-right: 30px;
 }
@@ -1068,10 +1138,6 @@ p {
 
 .displayNone {
   display: none;
-}
-
-.rightBorderSeperator {
-  border-right: 1px solid #ccc;
 }
 
 .leftRightBorderSeperator {

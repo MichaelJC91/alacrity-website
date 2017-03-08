@@ -6,7 +6,7 @@
           </div>
           <div class="col-md-12 topPadding50 bottomPadding100">
             <form action="/mail" method="POST">
-              <div class="d-flex flex-wrap justify-content-between">
+              <div class="d-flex flex-wrap justify-content-between contactFormWrapper">
                 <div class=" contactInput">
                   <input class="name" type="text" name="name" placeholder="Full Name*" required />
                 </div>
@@ -44,6 +44,11 @@
         <div class="copyrightText">
           <span>Copyright @Alacrity Web Development <%= new Date().getFullYear(); %>. All Rights Reserved</span>
         </div>
+        <ul class="legalLinks ml-auto d-flex flex-row">
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+          <li><a href="/disclaimer">Disclaimer</a></li>
+        </ul>
     </div>
   </div>
     <script type="text/javascript" src="/app.bundle.js"></script>

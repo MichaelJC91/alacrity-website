@@ -46,6 +46,22 @@ app.get('/contact-us', (req, res) => {
   res.render('contact-us');
 });
 
+// Legal Document pages
+// Privacy Policy Route
+app.get('/privacy-policy', (req, res) => {
+  res.render('privacy-policy');
+});
+
+// Terms & Conditions
+app.get('/terms-and-conditions', (req, res) => {
+  res.render('terms-and-conditions');
+});
+
+// Website Disclaimer
+app.get('/disclaimer', (req, res) => {
+  res.render('disclaimer');
+});
+
 //Use Required Routes
 app.use(indexRoutes);
 

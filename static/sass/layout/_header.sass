@@ -56,8 +56,16 @@
       &:hover
         border-bottom: none
 
-.topSecondaryNavbarList
-  flex-direction: row
-
 .navbarContactIcon
   padding-right: 10px
+
+// Legal Pages
+
+// Privacy Policy Page
+.privacyPolicyPage
+  .transparentBar
+    background-color: $primary-color-overlay
+    .topSecondaryNavbar
+      background-color: $primary-color-overlay
+.termsAndConditionsPage
+  @extend .privacyPolicyPage

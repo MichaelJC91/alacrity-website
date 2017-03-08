@@ -1,4 +1,5 @@
 @import "../modules/components.sass"
+@import "../base/_variables.sass"
 
 @media (min-width: 768px)
   .contactFirstCol
@@ -35,6 +36,32 @@
     right: 0
     top: 50%
 
+  //Borders
+  .rightBorderSeperator
+    border-right: 1px solid $grey
+
+  //Testimonials
+  .testimonials
+    .singleTestimonial
+      padding: 50px
+
+  //About - Capabilities
+  .aboutServiceItemWrapper
+    padding: 30px
+    &:nth-of-type(3)
+      border-left: 1px solid
+      border-right: 1px solid
+    &:nth-of-type(n + 5)
+      border-top: 1px solid
+    &:nth-of-type(6)
+      border-left: 1px solid
+      border-right: 1px solid
+    h4
+      font-weight: 700
+
+  .aboutBelieveIn
+    padding: 10px 50px
+
 @media (max-width: 768px)
   .googleMapWrapper
     padding: 0
@@ -50,3 +77,32 @@
     .homeOurWorkGridFour,
     .homeOurWorkGridFive
       height: 300px
+  .contactFooter
+    input
+      text-align: center
+
+  .statisticsContainer
+    .statisticsContainerBox
+      margin-top: 10px
+
+  //Testimonials
+  .testimonials
+    .singleTestimonial
+      padding: 20px
+
+  //Home page - service summary
+  .homeServiceSummaryContainer
+    padding-top: 20px
+
+  //Hero Image text
+  .heroImage
+    h1
+      font-size: 24px
+    h2
+      font-size: 20px
+
+  .aboutBelieveIn
+    padding-top: 20px
+
+  .aboutServiceItemWrapper
+    padding: 10px 0  
