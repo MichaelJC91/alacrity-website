@@ -62,6 +62,11 @@ app.get('/disclaimer', (req, res) => {
   res.render('disclaimer');
 });
 
+// Portfolio Works
+app.get('/our-work/asktheo', (req, res) => {
+  res.render('./portfolio/asktheo');
+});
+
 //Use Required Routes
 app.use(indexRoutes);
 

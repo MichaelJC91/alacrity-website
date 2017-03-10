@@ -83,11 +83,11 @@
   padding-right: 10px;
 }
 
-.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar {
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar {
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
@@ -982,6 +982,9 @@ p {
 .legalLinks {
   list-style: none;
   font-size: 0.8rem;
+}
+
+.legalLinks a {
   color: #ffffff;
 }
 

@@ -18,7 +18,7 @@ var config = {
     hot: true
   },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin()
+    new webpack.optimize.UglifyJSPlugin()
   ]
 };
 
