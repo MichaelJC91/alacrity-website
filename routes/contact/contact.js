@@ -4,12 +4,15 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 //Nodemailer transporter
-let transporter = nodemailer.createTransport({
+let smtpTransporter = nodemailer.createTransport('SMTP', {
     service: 'gmail',
     auth: {
-        type: 'OAuth2',
+      XOAuth2: {
+        user: process.env.GOOGLE_EMAIL,
         clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.GOOGLE_REFRESH_TOKEN
+      }
     }
 });
 
@@ -35,16 +38,16 @@ router.post('/mail', function(req, res) {
       html: `From: ${ name }<br>
              Email: ${ email }<br>
              Phone: ${ phone }<br><br>
-             Message: ${ message }`,
-
+             Message: ${ message }`
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  smtpTransporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return console.log(error);
     } else {
       res.redirect('/');
     }
+    smtpTransporter.close();
   });
 });
 
