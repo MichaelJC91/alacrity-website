@@ -7,12 +7,8 @@ const router = express.Router();
 let smtpTransporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      XOAuth2: {
-        user: "mcarniato1991@gmail.com",
-        clientId: "873405719370-8k43d4bqser0v8e1lon7s5pfm1le8pc2.apps.googleusercontent.com",
-        clientSecret: "p2mRp7oX2ZtAu_GYYqbBtfTf",
-        refreshToken: "1/qVMi33HK64i8yBSZoUQ93fLF_1RQmusy5PPEUzBlASJQZre9w4oSr9A92O8ssWp2"
-      }
+      username: process.env.GOOGLE_EMAIL,
+      password: process.env.GOOGLE_PASSWORD
     }
 });
 
@@ -47,7 +43,6 @@ router.post('/mail', function(req, res) {
     } else {
       res.redirect('/');
     }
-    smtpTransporter.close();
   });
 });
 
