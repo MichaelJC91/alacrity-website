@@ -7,6 +7,9 @@ const bodyParser = require('body-parser');
 //Required Routes
 const indexRoutes = require('./routes/contact/contact');
 
+//Port
+const port = process.env.PORT || 8080;
+
 //Set Static Folders
 app.use(express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/dist'));
@@ -71,6 +74,6 @@ app.get('/our-work/asktheo', (req, res) => {
 app.use(indexRoutes);
 
 //Listen on port 8080
-app.listen(8080, function() {
+app.listen(port, function() {
   console.log("App Running");
 });
