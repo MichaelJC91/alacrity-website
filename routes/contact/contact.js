@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 //Nodemailer transporter
-let smtpTransporter = nodemailer.createTransport("SMTP", {
+let smtpTransporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
       XOAuth2: {
