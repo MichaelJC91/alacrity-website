@@ -7,8 +7,9 @@ const router = express.Router();
 let transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: process.env.GOOGLE_EMAIL,
-        pass: process.env.GOOGLE_PASSWORD
+        type: 'OAuth2',
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET
     }
 });
 
@@ -34,7 +35,8 @@ router.post('/mail', function(req, res) {
       html: `From: ${ name }<br>
              Email: ${ email }<br>
              Phone: ${ phone }<br><br>
-             Message: ${ message }`
+             Message: ${ message }`,
+
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
