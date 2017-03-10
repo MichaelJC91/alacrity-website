@@ -7,8 +7,8 @@ const router = express.Router();
 let smtpTransporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      username: process.env.GOOGLE_EMAIL,
-      password: process.env.GOOGLE_PASSWORD
+      user: process.env.GOOGLE_EMAIL,
+      pass: process.env.GOOGLE_PASSWORD
     }
 });
 
