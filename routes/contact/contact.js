@@ -4,14 +4,14 @@ const nodemailer = require('nodemailer');
 const router = express.Router();
 
 //Nodemailer transporter
-let smtpTransporter = nodemailer.createTransport('SMTP', {
-    service: 'gmail',
+let smtpTransporter = nodemailer.createTransport("SMTP", {
+    service: 'Gmail',
     auth: {
       XOAuth2: {
-        user: process.env.GOOGLE_EMAIL,
-        clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
-        refreshToken: process.env.GOOGLE_REFRESH_TOKEN
+        user: "mcarniato1991@gmail.com",
+        clientId: "873405719370-8k43d4bqser0v8e1lon7s5pfm1le8pc2.apps.googleusercontent.com",
+        clientSecret: "p2mRp7oX2ZtAu_GYYqbBtfTf",
+        refreshToken: "1/qVMi33HK64i8yBSZoUQ93fLF_1RQmusy5PPEUzBlASJQZre9w4oSr9A92O8ssWp2"
       }
     }
 });
