@@ -5,7 +5,7 @@ const router = express.Router();
 
 //Nodemailer transporter
 let smtpTransporter = nodemailer.createTransport({
-    service: 'Gmail',
+    service: 'gmail',
     auth: {
       user: "mcarniato1991@gmail.com",
       pass: "marvel1991"
@@ -28,8 +28,8 @@ router.post('/mail', function(req, res) {
   let { name, email, phone, subject, message } = contactFormData;
 
   let mailOptions = {
-      from: email + '<' + process.env.GOOGLE_EMAIL + '>', // sender address
-      to: process.env.GOOGLE_BUSINESS_EMAIL, // list of receivers
+      from: email + '<' + "mcarniato1991@gmail.com" + '>', // sender address
+      to: 'michael@alacritywebdev.com.au', // list of receivers
       subject, // Subject line
       html: `From: ${ name }<br>
              Email: ${ email }<br>
