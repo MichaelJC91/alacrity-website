@@ -8,7 +8,7 @@ let smtpTransporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
       user: "mcarniato1991@gmail.com",
-      pass: process.env.GOOGLE_PASSWORD
+      pass: "marvel1991"
     }
 });
 
