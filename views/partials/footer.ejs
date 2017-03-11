@@ -24,6 +24,12 @@
                 </div>
                 <div class="fullWidth topPadding30 bottomPadding20">
                   <button class="btn btn-primary contactFormButton textShadow">Submit</button>
+                  <button
+                    class="g-recaptcha btn btn-primary contactFormButton textShadow"
+                    data-sitekey="6LfMjxgUAAAAAPxcmMOl0Gb1P3QKyXDWDHegyiGg"
+                    data-callback="onSubmit">
+                    Submit
+                  </button>
                 </div>
                 <div class="fullWidth text-center loader">
                   <div class="icon"></div>
@@ -52,5 +58,6 @@
     <script type="text/javascript" src="/app.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="/js/jquery.counterup.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </body>
 </html>

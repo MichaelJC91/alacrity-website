@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 //Contact Form Logic
-export default function () {
+function onSubmit() {
   $("form").submit(function(event) {
     event.preventDefault();
     let formData = {
@@ -33,3 +33,5 @@ export default function () {
     });
   });
 }
+
+export onSubmit;
