@@ -5,7 +5,7 @@ const expressSanitizer = require('express-sanitizer');
 const bodyParser = require('body-parser');
 
 //Required Routes
-const indexRoutes = require('./routes/contact/contact');
+const indexRoutes = require('./routes/contact/contact2');
 
 //Port
 const port = process.env.PORT || 8080;
