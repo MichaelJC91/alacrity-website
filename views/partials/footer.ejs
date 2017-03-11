@@ -23,11 +23,10 @@
                   <input class="fullWidth message" type="text" name="message" placeholder="Describe Your Project in a few Sentences" required/>
                 </div>
                 <div class="fullWidth topPadding30 bottomPadding20">
-                  <button class="btn btn-primary contactFormButton textShadow">Submit</button>
                   <button
                     class="g-recaptcha btn btn-primary contactFormButton textShadow"
                     data-sitekey="6LfMjxgUAAAAAPxcmMOl0Gb1P3QKyXDWDHegyiGg"
-                    data-callback="onSubmit()">
+                    data-callback=onSubmit>
                     Submit
                   </button>
                 </div>
@@ -59,5 +58,41 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="/js/jquery.counterup.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+    function onSubmit() {
+      $("form").submit(function(event) {
+        event.preventDefault();
+        let formData = {
+          name: $('.name').val(),
+          email: $('.email').val(),
+          phone: $('.phone').val(),
+          subject: $('.subject').val(),
+          message: $('.message').val(),
+        }
+
+        $('.loader .icon').addClass('ajaxLoader');
+
+        $.ajax({
+          type: "POST",
+          url: "/mail",
+          data: JSON.stringify(formData),
+          contentType: "application/json; charset=UTF-8",
+          dataType: 'text',
+          success: function() {
+
+            $('.loader').hide();
+            $('.responseMessage').text('Message Sent Successfully! Thank you for contacting us!');
+            $('.contactMessage').delay(100).slideDown( 1000 );
+          },
+          error: function() {
+            $('.loader').hide();
+            $('.responseMessage').addClass('responseMessageError').text('Message Did Not Send. Try Again Later');
+            $('.contactMessage').delay(100).slideDown( 1000 );
+          }
+        });
+      });
+    }
+    </script>
   </body>
 </html>
