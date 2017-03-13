@@ -1,47 +1,50 @@
 const express = require('express');
 const expressSanitizer = require('express-sanitizer');
-const nodemailer = require('nodemailer');
 const router = express.Router();
+const sendmail = require('sendmail')();
+const recaptcha = require('express-recaptcha');
 
-//Nodemailer transporter
-let smtpTransporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: "mcarniato1991@gmail.com",
-      pass: "marvel1991"
-    }
-});
+//Recaptcha middleware config
+recaptcha.init('6LdwnRgUAAAAAGmpIHlF4TKbpBcsDdpJ3CzK_hoq', '6LdwnRgUAAAAAMQWeMZaczOqnIL7Bumde4iVXalw');
 
-//Nodemailer route
+//Mailer route
 
-router.post('/mail', function(req, res) {
+router.post('/mail', (req, res) => {
   const reqBody = req.body;
   const sanitizer = req.sanitize;
-  let contactFormData = {
-    name: reqBody.name = sanitizer(reqBody.name),
-    email: reqBody.email = sanitizer(reqBody.email),
-    phone: reqBody.phone = sanitizer(reqBody.phone),
-    subject: reqBody.subject = sanitizer(reqBody.subject),
-    message: reqBody.message = sanitizer(reqBody.message)
-  }
 
-  let { name, email, phone, subject, message } = contactFormData;
+  recaptcha.verify(req, (error) => {
+    if(!error) {
+      console.log("No Error");
+      let contactFormData = {
+        name: reqBody.name = sanitizer(reqBody.name),
+        email: reqBody.email = sanitizer(reqBody.email),
+        phone: reqBody.phone = sanitizer(reqBody.phone),
+        subject: reqBody.subject = sanitizer(reqBody.subject),
+        message: reqBody.message = sanitizer(reqBody.message)
+      }
 
-  let mailOptions = {
-      from: email + '<' + "mcarniato1991@gmail.com" + '>', // sender address
-      to: 'michael@alacritywebdev.com.au', // list of receivers
-      subject, // Subject line
-      html: `From: ${ name }<br>
-             Email: ${ email }<br>
-             Phone: ${ phone }<br><br>
-             Message: ${ message }`
-  };
+      let { name, email, phone, subject, message } = contactFormData;
 
-  smtpTransporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      return console.log(error);
+      let mailOptions = {
+          from: email + '<' + "mcarniato1991@gmail.com" + '>', // sender address
+          to: 'michael@alacritywebdev.com.au', // list of receivers
+          subject, // Subject line
+          html: `From: ${ name }<br>
+                 Email: ${ email }<br>
+                 Phone: ${ phone }<br><br>
+                 Message: ${ message }`
+      };
+
+      sendmail(mailOptions, function(err, reply) {
+          if(err) {
+            console.log(err);
+          } else {
+            res.redirect('/');
+          }
+      });
     } else {
-      res.redirect('/');
+      console.log(req.body);
     }
   });
 });

@@ -900,6 +900,9 @@
   .contactFooter input {
     text-align: center;
   }
+  .googleRecaptcha {
+    margin: 0 auto;
+  }
   .statisticsContainer .statisticsContainerBox {
     margin-top: 10px;
   }
