@@ -4,9 +4,14 @@ const mongoose = require('mongoose');
 const expressSanitizer = require('express-sanitizer');
 const bodyParser = require('body-parser');
 const compression = require('compression');
+const apicache = require('apicache');
 
 //Required Routes
 const indexRoutes = require('./routes/contact/contact');
+
+//Cache Middleware
+const cache = apicache.middleware;
+app.use(cache('5 minutes'));
 
 //Gzip Compress
 app.use(compression());
