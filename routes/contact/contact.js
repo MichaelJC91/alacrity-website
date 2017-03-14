@@ -5,7 +5,7 @@ const sendmail = require('sendmail')();
 const recaptcha = require('express-recaptcha');
 
 //Recaptcha middleware config
-recaptcha.init("6LfBuxgUAAAAAJ1scxd1SwOzIkwlMsIvsOv1Dx0r", "6LfBuxgUAAAAAM76dgKhciCRvoBh73aAlU0JlxGW");
+recaptcha.init(process.env.GOOGLE_SITE_KEY, process.env.GOOGLE_SECRET_KEY);
 
 //Mailer route
 
