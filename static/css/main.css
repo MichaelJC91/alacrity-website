@@ -109,6 +109,10 @@
   color: #ffffff;
 }
 
+.portfolioAskTheoHero {
+  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/q_100/v1489475473/Alacrity%20Web%20Development%20Portfolio%20-%20AskTHEO.jpg");
+}
+
 .viewPortHeight {
   height: 100vh;
 }
@@ -221,7 +225,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -514,7 +518,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -775,7 +779,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1123,7 +1127,7 @@ p {
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
