@@ -340,6 +340,26 @@
   position: relative;
 }
 
+.homeOurWorkGridOne {
+  background-image: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487907573/Glenlyon%20Dental.jpg");
+}
+
+.homeOurWorkGridTwo {
+  background-image: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487910815/Barefoot%20Blender%202.jpg");
+}
+
+.homeOurWorkGridThree {
+  background-image: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487907967/Tegan%20Steele.jpg");
+}
+
+.homeOurWorkGridFour {
+  background-image: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487239119/Home/Alacrity_Web_Development_-_Our_Work_5.jpg");
+}
+
+.homeOurWorkGridFive {
+  background-image: url("http://res.cloudinary.com/alacrity-web-development/image/upload/v1487240059/Home/Alacrity_Web_Development_-_Our_Work_4.jpg");
+}
+
 .btn-primary.testimonialContact {
   border: 2px solid #ffffff;
 }
