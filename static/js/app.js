@@ -5,7 +5,6 @@ window.$ = window.jQuery = $;
 import tether from 'tether';
 global.Tether = tether;
 require('bootstrap');
-import contactForm from './contactForm';
 import toggleFunction from './toggleFunction';
 import header from './header';
 import slickCarousel from 'slick-carousel';
@@ -32,7 +31,7 @@ export default $(document).ready(() => {
   }
 
   //Fire contact form logic
-  contactForm();
+  // contactForm();
 
   //Home page - Benefits section toggle
   toggleFunction('.homeBenefitsOne');

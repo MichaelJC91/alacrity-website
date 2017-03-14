@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -10322,61 +10322,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-  (0, _jquery2.default)("form").submit(function (event) {
-    event.preventDefault();
-    var formData = {
-      name: (0, _jquery2.default)('.name').val(),
-      email: (0, _jquery2.default)('.email').val(),
-      phone: (0, _jquery2.default)('.phone').val(),
-      subject: (0, _jquery2.default)('.subject').val(),
-      message: (0, _jquery2.default)('.message').val(),
-      "g-recaptcha-response": grecaptcha.getResponse()
-    };
-
-    if (!grecaptcha.getResponse()) {
-      alert("Please tick the google captcha box");
-    } else {
-      (0, _jquery2.default)('.loader .icon').addClass('ajaxLoader');
-
-      _jquery2.default.ajax({
-        type: "POST",
-        url: "/mail",
-        data: JSON.stringify(formData),
-        contentType: "application/json; charset=UTF-8",
-        dataType: 'text',
-        success: function success() {
-          (0, _jquery2.default)('.loader').hide();
-          (0, _jquery2.default)('.responseMessage').text('Message Sent Successfully! Thank you for contacting us!');
-          (0, _jquery2.default)('.contactMessage').delay(100).slideDown(1000);
-        },
-        error: function error() {
-          (0, _jquery2.default)('.loader').hide();
-          (0, _jquery2.default)('.responseMessage').addClass('responseMessageError').text('Message Did Not Send. Try Again Later');
-          (0, _jquery2.default)('.contactMessage').delay(100).slideDown(1000);
-        }
-      });
-    }
-  });
-};
-
-var _jquery = __webpack_require__(0);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-exports.default = function () {
 
   //Checks if user reloads below the top of page
   if ((0, _jquery2.default)('header').offset().top > 0) {
@@ -10394,7 +10339,7 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10442,7 +10387,7 @@ exports.default = function () {
 };
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10473,7 +10418,7 @@ function setNavigation() {
 exports.default = setNavigation;
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10502,7 +10447,7 @@ function toggleFunction(target) {
 }
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports) {
 
 /*!
@@ -14043,7 +13988,7 @@ var Popover = function ($) {
 
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
@@ -16944,7 +16889,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/*! tether 1.4.0 */
@@ -18765,7 +18710,7 @@ return Tether;
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports) {
 
 var g;
@@ -18792,7 +18737,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18806,7 +18751,7 @@ var _jquery = __webpack_require__(0);
 
 var _jquery2 = _interopRequireDefault(_jquery);
 
-var _setNavigation = __webpack_require__(5);
+var _setNavigation = __webpack_require__(4);
 
 var _setNavigation2 = _interopRequireDefault(_setNavigation);
 
@@ -18814,27 +18759,23 @@ var _columnHeights = __webpack_require__(1);
 
 var _columnHeights2 = _interopRequireDefault(_columnHeights);
 
-var _tether = __webpack_require__(9);
+var _tether = __webpack_require__(8);
 
 var _tether2 = _interopRequireDefault(_tether);
 
-var _contactForm = __webpack_require__(2);
-
-var _contactForm2 = _interopRequireDefault(_contactForm);
-
-var _toggleFunction = __webpack_require__(6);
+var _toggleFunction = __webpack_require__(5);
 
 var _toggleFunction2 = _interopRequireDefault(_toggleFunction);
 
-var _header = __webpack_require__(3);
+var _header = __webpack_require__(2);
 
 var _header2 = _interopRequireDefault(_header);
 
-var _slickCarousel = __webpack_require__(8);
+var _slickCarousel = __webpack_require__(7);
 
 var _slickCarousel2 = _interopRequireDefault(_slickCarousel);
 
-var _mobile = __webpack_require__(4);
+var _mobile = __webpack_require__(3);
 
 var _mobile2 = _interopRequireDefault(_mobile);
 
@@ -18843,7 +18784,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 window.$ = window.jQuery = _jquery2.default;
 
 global.Tether = _tether2.default;
-__webpack_require__(7);
+__webpack_require__(6);
 exports.default = (0, _jquery2.default)(document).ready(function () {
 
   // Run header check function
@@ -18865,7 +18806,7 @@ exports.default = (0, _jquery2.default)(document).ready(function () {
   }
 
   //Fire contact form logic
-  (0, _contactForm2.default)();
+  // contactForm();
 
   //Home page - Benefits section toggle
   (0, _toggleFunction2.default)('.homeBenefitsOne');
@@ -18888,7 +18829,7 @@ exports.default = (0, _jquery2.default)(document).ready(function () {
     mobileFirst: true
   });
 });
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(10)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9)))
 
 /***/ })
 /******/ ]);

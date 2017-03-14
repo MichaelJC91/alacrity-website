@@ -5,7 +5,7 @@ const sendmail = require('sendmail')();
 const recaptcha = require('express-recaptcha');
 
 //Recaptcha middleware config
-recaptcha.init('6LdwnRgUAAAAAGmpIHlF4TKbpBcsDdpJ3CzK_hoq', '6LdwnRgUAAAAAMQWeMZaczOqnIL7Bumde4iVXalw');
+recaptcha.init("6LfBuxgUAAAAAJ1scxd1SwOzIkwlMsIvsOv1Dx0r", "6LfBuxgUAAAAAM76dgKhciCRvoBh73aAlU0JlxGW");
 
 //Mailer route
 
@@ -15,7 +15,7 @@ router.post('/mail', (req, res) => {
 
   recaptcha.verify(req, (error) => {
     if(!error) {
-      console.log("No Error");
+      console.log(req.body);
       let contactFormData = {
         name: reqBody.name = sanitizer(reqBody.name),
         email: reqBody.email = sanitizer(reqBody.email),
