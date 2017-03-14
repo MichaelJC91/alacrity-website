@@ -12,19 +12,18 @@ const indexRoutes = require('./routes/contact/contact');
 //Cache Middleware
 const cache = apicache.middleware;
 app.use(cache('1 day'));
-
-//Gzip Compress
-app.use(compression());
-
-//Port
-const port = process.env.PORT || 8080;
-
 app.use(function (req, res, next) {
     if (req.url.match(/^\/(css|js|img|font)\/.+/)) {
         res.setHeader('Cache-Control', 'public, max-age=3600');
     }
     next();
 });
+
+//Gzip Compress
+app.use(compression());
+
+//Port
+const port = process.env.PORT || 8080;
 
 //Set Static Folders
 app.use(express.static(__dirname + '/static'));
