@@ -19,6 +19,13 @@ app.use(compression());
 //Port
 const port = process.env.PORT || 8080;
 
+app.use(function (req, res, next) {
+    if (req.url.match(/^\/(css|js|img|font)\/.+/)) {
+        res.setHeader('Cache-Control', 'public, max-age=3600');
+    }
+    next();
+});
+
 //Set Static Folders
 app.use(express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/dist'));
