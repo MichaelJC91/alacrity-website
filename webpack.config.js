@@ -16,7 +16,10 @@ var config = {
   },
   devServer: {
     hot: true
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 };
 
 module.exports = config;

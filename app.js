@@ -3,9 +3,13 @@ const app = express();
 const mongoose = require('mongoose');
 const expressSanitizer = require('express-sanitizer');
 const bodyParser = require('body-parser');
+const compression = require('compression');
 
 //Required Routes
 const indexRoutes = require('./routes/contact/contact');
+
+//Gzip Compress
+app.use(compression());
 
 //Port
 const port = process.env.PORT || 8080;
