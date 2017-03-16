@@ -11,14 +11,17 @@ const indexRoutes = require('./routes/contact/contact');
 
 //Cache Middleware
 const cache = apicache.middleware;
-app.use(cache('1 day'));
-//Caches css, js, imgs, and fonts
-app.use(function (req, res, next) {
-    if (req.url.match(/^\/(css|js|img|font)\/.+/)) {
-        res.setHeader('Cache-Control', 'public, max-age=3600');
-    }
-    next();
-});
+
+// if(process.env.NODE_ENV === "production") {
+//   app.use(cache('1 day'));
+//   // Caches css, js, imgs, and fonts
+//   app.use(function (req, res, next) {
+//       if (req.url.match(/^\/(css|js|img|font)\/.+/)) {
+//           res.setHeader('Cache-Control', 'public, max-age=3600');
+//       }
+//       next();
+//   });
+// }
 
 //Gzip Compress
 app.use(compression());

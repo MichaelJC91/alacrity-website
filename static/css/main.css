@@ -110,7 +110,7 @@
 }
 
 .portfolioAskTheoHero {
-  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/q_100/v1489475473/Alacrity%20Web%20Development%20Portfolio%20-%20AskTHEO.jpg");
+  background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/q_100/v1489487147/Alacrity%20Web%20Development%20Portfolio%20-%20AskTHEO.jpg");
 }
 
 .viewPortHeight {
@@ -130,10 +130,6 @@
 .seperatorLeft {
   margin: 20px 0;
   max-width: 100px;
-}
-
-.navSpacer {
-  height: 177px;
 }
 
 /*White Seperator*/
@@ -279,6 +275,22 @@
 
 .maxHeight {
   max-height: 100%;
+}
+
+.portfolioHeroLink {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.portfolioHeroLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.portfolioHeroLink:focus {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .viewHeight100 {
@@ -414,6 +426,15 @@
   background: #eee;
 }
 
+.portfolioDescription h4 {
+  line-height: 1.4;
+}
+
+.portfolioFullWidthImages {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .seperator, .seperatorLeft {
   border-bottom: 3px solid #00b0dc;
   max-width: 10%;
@@ -423,10 +444,6 @@
 .seperatorLeft {
   margin: 20px 0;
   max-width: 100px;
-}
-
-.navSpacer {
-  height: 177px;
 }
 
 /*White Seperator*/
@@ -572,6 +589,22 @@
 
 .maxHeight {
   max-height: 100%;
+}
+
+.portfolioHeroLink {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.portfolioHeroLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.portfolioHeroLink:focus {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .contactFooter {
@@ -686,10 +719,6 @@
   max-width: 100px;
 }
 
-.navSpacer {
-  height: 177px;
-}
-
 /*White Seperator*/
 .whiteSeperator {
   border-color: #ffffff;
@@ -835,7 +864,26 @@
   max-height: 100%;
 }
 
+.portfolioHeroLink {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.portfolioHeroLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.portfolioHeroLink:focus {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
+  .navSpacer {
+    height: 177px;
+  }
   .contactFirstCol .contactPageHours, .contactFirstCol .contactPageEmail {
     border-top: 1px solid #ccc;
   }
@@ -904,6 +952,9 @@
 }
 
 @media (max-width: 768px) {
+  .navSpacer {
+    height: 128px;
+  }
   .googleMapWrapper {
     padding: 0;
   }
@@ -1034,10 +1085,6 @@ p {
   max-width: 100px;
 }
 
-.navSpacer {
-  height: 177px;
-}
-
 /*White Seperator*/
 .whiteSeperator {
   border-color: #ffffff;
@@ -1181,6 +1228,22 @@ p {
 
 .maxHeight {
   max-height: 100%;
+}
+
+.portfolioHeroLink {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.portfolioHeroLink:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.portfolioHeroLink:focus {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .btn-primary {
