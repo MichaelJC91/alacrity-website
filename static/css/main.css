@@ -83,11 +83,11 @@
   padding-right: 10px;
 }
 
-.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar {
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar {
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
@@ -115,6 +115,10 @@
 
 .portfolioTeganHero {
   background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489715013/Alacrity%20Web%20Development%20Portfolio%20-%20Tegan.jpg");
+}
+
+.portfolioBarefootBlenderHero {
+  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489730106/Alacrity%20Web%20Development%20Portfolio%20-%20Barefoot%20Blender.jpg");
 }
 
 .viewPortHeight {
@@ -225,7 +229,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -367,7 +371,7 @@
 }
 
 .homeOurWorkGridOne:hover {
-  z-index: 99999;
+  z-index: 10000;
   transform: scale(1.025);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
@@ -378,7 +382,7 @@
 }
 
 .homeOurWorkGridTwo:hover {
-  z-index: 99999;
+  z-index: 10000;
   transform: scale(1.025);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
@@ -389,7 +393,7 @@
 }
 
 .homeOurWorkGridThree:hover {
-  z-index: 99999;
+  z-index: 10000;
   transform: scale(1.025);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
@@ -400,7 +404,7 @@
 }
 
 .homeOurWorkGridFour:hover {
-  z-index: 99999;
+  z-index: 10000;
   transform: scale(1.025);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
@@ -411,7 +415,7 @@
 }
 
 .homeOurWorkGridFive:hover {
-  z-index: 99999;
+  z-index: 10000;
   transform: scale(1.025);
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
@@ -575,7 +579,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -849,7 +853,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1216,7 +1220,7 @@ p {
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

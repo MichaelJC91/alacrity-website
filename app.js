@@ -93,6 +93,18 @@ app.get('/our-work/tegan-steele', (req, res) => {
   res.render('./portfolio/tegan-steele');
 });
 
+app.get('/our-work/glenlyon-dental', (req, res) => {
+  res.render('./portfolio/glenlyon-dental');
+});
+
+app.get('/our-work/hollander-fitness', (req, res) => {
+  res.render('./portfolio/hollander-fitness');
+});
+
+app.get('/our-work/barefoot-blender', (req, res) => {
+  res.render('./portfolio/barefoot-blender');
+});
+
 //Use Required Routes
 app.use(indexRoutes);
 
