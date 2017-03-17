@@ -83,11 +83,11 @@
   padding-right: 10px;
 }
 
-.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar {
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar {
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
@@ -113,12 +113,16 @@
   background: url("http://res.cloudinary.com/alacrity-web-development/image/upload/q_100/v1489487147/Alacrity%20Web%20Development%20Portfolio%20-%20AskTHEO.jpg");
 }
 
+.portfolioTeganHero {
+  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489715013/Alacrity%20Web%20Development%20Portfolio%20-%20Tegan.jpg");
+}
+
 .viewPortHeight {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .viewPortHeight60 {
-  height: 60vh;
+  min-height: 60vh;
 }
 
 .seperator, .seperatorLeft {
@@ -221,7 +225,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -281,6 +285,7 @@
   text-transform: uppercase;
   text-decoration: underline;
   color: #ffffff;
+  text-shadow: 1px 1px 10px #313131;
 }
 
 .portfolioHeroLink:hover {
@@ -358,22 +363,57 @@
 
 .homeOurWorkGridOne {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487907573/Glenlyon%20Dental.jpg");
+  transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridOne:hover {
+  z-index: 99999;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .homeOurWorkGridTwo {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487910815/Barefoot%20Blender%202.jpg");
+  transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridTwo:hover {
+  z-index: 99999;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .homeOurWorkGridThree {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487907967/Tegan%20Steele.jpg");
+  transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridThree:hover {
+  z-index: 99999;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .homeOurWorkGridFour {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487239119/Home/Alacrity_Web_Development_-_Our_Work_5.jpg");
+  transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridFour:hover {
+  z-index: 99999;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .homeOurWorkGridFive {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487240059/Home/Alacrity_Web_Development_-_Our_Work_4.jpg");
+  transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridFive:hover {
+  z-index: 99999;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .btn-primary.testimonialContact {
@@ -535,7 +575,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -595,6 +635,7 @@
   text-transform: uppercase;
   text-decoration: underline;
   color: #ffffff;
+  text-shadow: 1px 1px 10px #313131;
 }
 
 .portfolioHeroLink:hover {
@@ -808,7 +849,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -868,6 +909,7 @@
   text-transform: uppercase;
   text-decoration: underline;
   color: #ffffff;
+  text-shadow: 1px 1px 10px #313131;
 }
 
 .portfolioHeroLink:hover {
@@ -1174,7 +1216,7 @@ p {
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1234,6 +1276,7 @@ p {
   text-transform: uppercase;
   text-decoration: underline;
   color: #ffffff;
+  text-shadow: 1px 1px 10px #313131;
 }
 
 .portfolioHeroLink:hover {

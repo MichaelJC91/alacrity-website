@@ -89,6 +89,10 @@ app.get('/our-work/asktheo', (req, res) => {
   res.render('./portfolio/asktheo');
 });
 
+app.get('/our-work/tegan-steele', (req, res) => {
+  res.render('./portfolio/tegan-steele');
+});
+
 //Use Required Routes
 app.use(indexRoutes);
 
