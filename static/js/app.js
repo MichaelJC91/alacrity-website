@@ -10,13 +10,13 @@ import header from './header';
 import slickCarousel from 'slick-carousel';
 import mobile from './mobile';
 import anchorScroll from './smoothScroll';
-// import 'autotrack';
+import 'autotrack';
+
+//Google analytics
+ga('create', 'UA-93931236-1', 'auto');
+ga('send', 'pageview');
 
 export default $(document).ready(() => {
-
-  //Google analytics
-  // ga('create', 'UA-93931236-1', 'auto');
-  // ga('send', 'pageview');
 
   // Run header check function
   header();
