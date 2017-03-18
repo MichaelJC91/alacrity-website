@@ -83,11 +83,11 @@
   padding-right: 10px;
 }
 
-.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar {
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar, .ourWorkGlenlyonDentalPage .transparentBar, .ourWorkHollanderFitnessPage .transparentBar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar {
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar, .ourWorkGlenlyonDentalPage .transparentBar .topSecondaryNavbar, .ourWorkHollanderFitnessPage .transparentBar .topSecondaryNavbar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
@@ -119,6 +119,14 @@
 
 .portfolioBarefootBlenderHero {
   background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489730106/Alacrity%20Web%20Development%20Portfolio%20-%20Barefoot%20Blender.jpg");
+}
+
+.portfolioGlenlyonDentalHero {
+  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489756933/Alacrity%20Web%20Development%20-%20Glenlyon%20Dental%20Hero.jpg");
+}
+
+.portfolioHollanderFitnessHero {
+  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489759264/Alacrity%20Web%20Development%20-%20Hollander%20Fitness%20Hero.jpg");
 }
 
 .viewPortHeight {
@@ -229,7 +237,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -370,6 +378,15 @@
   transition: all 0.5s ease-in-out;
 }
 
+.homeOurWorkGridOne h4 {
+  padding-bottom: 10px;
+}
+
+.homeOurWorkGridOne .fontAwesomeIcon .fa {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 .homeOurWorkGridOne:hover {
   z-index: 10000;
   transform: scale(1.025);
@@ -379,6 +396,15 @@
 .homeOurWorkGridTwo {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487910815/Barefoot%20Blender%202.jpg");
   transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridTwo h4 {
+  padding-bottom: 10px;
+}
+
+.homeOurWorkGridTwo .fontAwesomeIcon .fa {
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .homeOurWorkGridTwo:hover {
@@ -392,6 +418,15 @@
   transition: all 0.5s ease-in-out;
 }
 
+.homeOurWorkGridThree h4 {
+  padding-bottom: 10px;
+}
+
+.homeOurWorkGridThree .fontAwesomeIcon .fa {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 .homeOurWorkGridThree:hover {
   z-index: 10000;
   transform: scale(1.025);
@@ -403,6 +438,15 @@
   transition: all 0.5s ease-in-out;
 }
 
+.homeOurWorkGridFour h4 {
+  padding-bottom: 10px;
+}
+
+.homeOurWorkGridFour .fontAwesomeIcon .fa {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 .homeOurWorkGridFour:hover {
   z-index: 10000;
   transform: scale(1.025);
@@ -412,6 +456,15 @@
 .homeOurWorkGridFive {
   background-image: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1487240059/Home/Alacrity_Web_Development_-_Our_Work_4.jpg");
   transition: all 0.5s ease-in-out;
+}
+
+.homeOurWorkGridFive h4 {
+  padding-bottom: 10px;
+}
+
+.homeOurWorkGridFive .fontAwesomeIcon .fa {
+  color: #ffffff;
+  font-size: 2rem;
 }
 
 .homeOurWorkGridFive:hover {
@@ -454,6 +507,16 @@
 .ourWorkText .fontAwesomeIcon .fa {
   color: #ffffff;
   font-size: 2rem;
+}
+
+.ourWorkItem {
+  transition: all 0.5s ease-in-out;
+}
+
+.ourWorkItem:hover {
+  z-index: 10000;
+  transform: scale(1.025);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.35);
 }
 
 .contactFirstCol p {
@@ -579,7 +642,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -853,7 +916,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1220,7 +1283,7 @@ p {
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
