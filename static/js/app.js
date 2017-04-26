@@ -11,7 +11,6 @@ import slickCarousel from 'slick-carousel';
 import mobile from './mobile';
 import 'autotrack';
 import 'jquery-smooth-scroll';
-import 'jquery-validation';
 
 export default $(document).ready(() => {
 

@@ -15,7 +15,6 @@ router.post('/mail', (req, res) => {
 
   recaptcha.verify(req, (error) => {
     if(!error) {
-      console.log(req.body);
       let contactFormData = {
         name: reqBody.name = sanitizer(reqBody.name),
         email: reqBody.email = sanitizer(reqBody.email),
