@@ -1,5 +1,5 @@
 //Contact Form Logic
-export function onSubmit() {
+function onSubmit() {
   let formData = {
     name: $('.name').val(),
     email: $('.email').val(),
