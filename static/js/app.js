@@ -9,8 +9,9 @@ import toggleFunction from './toggleFunction';
 import header from './header';
 import slickCarousel from 'slick-carousel';
 import mobile from './mobile';
-import anchorScroll from './smoothScroll';
 import 'autotrack';
+import 'jquery-smooth-scroll';
+import 'jquery-validation';
 
 export default $(document).ready(() => {
 
@@ -22,7 +23,10 @@ export default $(document).ready(() => {
   header();
 
   //Smooth anchor scroll
-  anchorScroll();
+  $('#homeProjectStart').smoothScroll({
+    speed: 750
+  });
+
 
   //Run Mobile function
   mobile();
