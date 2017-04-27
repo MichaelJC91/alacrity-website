@@ -1,5 +1,12 @@
+//Validate contact form
+$('#theForm').submit((event) => {
+  event.preventDefault();
+  grecaptcha.execute();
+});
+
 //Contact Form Logic
-function onSubmit() {
+function onSubmit(token) {
+
   let formData = {
     name: $('.name').val(),
     email: $('.email').val(),

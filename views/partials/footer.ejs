@@ -8,27 +8,30 @@
             <form action="/mail" method="POST" id="theForm">
               <div class="d-flex flex-wrap justify-content-between contactFormWrapper">
                 <div class=" contactInput">
-                  <input class="name" type="text" name="name" placeholder="Full Name*" required />
+                  <input class="name inputField" type="text" name="name" placeholder="Full Name*" required />
                 </div>
                 <div class="contactInput">
-                  <input class="email" type="email" name="email" placeholder="Email*" required />
+                  <input class="email inputField" type="email" name="email" placeholder="Email*" required />
                 </div>
                 <div class="contactInput">
-                  <input class="phone" type="tel" name="phone" placeholder="Phone Number*" required/>
+                  <input class="phone inputField" type="tel" name="phone" placeholder="Phone Number*" required/>
                 </div>
                 <div class="contactInput">
-                  <input class="subject" type="text" name="subject" placeholder="Subject*" required/>
+                  <input class="subject inputField" type="text" name="subject" placeholder="Subject*" required/>
                 </div>
                 <div class="fullWidth contactInput topPadding50">
-                  <input class="fullWidth message" type="text" name="message" placeholder="Describe Your Project in a few Sentences" required/>
+                  <input class="fullWidth message inputField" type="text" name="message" placeholder="Describe Your Project in a few Sentences" required/>
                 </div>
                 <div class="fullWidth topPadding30 bottomPadding20">
-                  <button
-                  class="g-recaptcha btn btn-primary textShadow"
+                  <div
+                  id="recaptcha"
+                  class="g-recaptcha"
                   data-sitekey=<%= process.env.GOOGLE_SITE_KEY %>
+                  data-size="invisible"
                   data-callback="onSubmit">
-                  Submit
-                  </button>                </div>
+                  </div>
+                  <button id="contactSubmitButtonID" class="btn btn-primary textShadow contactSubmitButton">Submit</button>
+                </div>
                 <div class="fullWidth text-center loader">
                   <div class="icon"></div>
                 </div>
@@ -59,6 +62,5 @@
     <script type="text/javascript" src="/js/jquery.counterup.min.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script type="text/javascript" src="/js/contactForm.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
   </body>
 </html>
