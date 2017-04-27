@@ -108,6 +108,11 @@ app.get('/our-work/barefoot-blender', (req, res) => {
 //Use Required Routes
 app.use(indexRoutes);
 
+//404 Page
+app.get('*', (req,res) => {
+  res.render("404");
+});
+
 //Listen on port 8080
 app.listen(port, function() {
   console.log("App Running");

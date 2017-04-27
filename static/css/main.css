@@ -83,11 +83,11 @@
   padding-right: 10px;
 }
 
-.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar, .ourWorkGlenlyonDentalPage .transparentBar, .ourWorkHollanderFitnessPage .transparentBar {
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar, .ourWorkGlenlyonDentalPage .transparentBar, .ourWorkHollanderFitnessPage .transparentBar, .error404Page .transparentBar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar, .ourWorkGlenlyonDentalPage .transparentBar .topSecondaryNavbar, .ourWorkHollanderFitnessPage .transparentBar .topSecondaryNavbar {
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar, .ourWorkGlenlyonDentalPage .transparentBar .topSecondaryNavbar, .ourWorkHollanderFitnessPage .transparentBar .topSecondaryNavbar, .error404Page .transparentBar .topSecondaryNavbar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 

@@ -23,7 +23,7 @@ export default $(document).ready(() => {
 
   //Smooth anchor scroll
   $('#homeProjectStart').smoothScroll({
-    speed: 750
+    speed: 1250
   });
 
 
