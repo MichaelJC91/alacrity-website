@@ -105,6 +105,10 @@ app.get('/our-work/barefoot-blender', (req, res) => {
   res.render('./portfolio/barefoot-blender');
 });
 
+app.get('/our-work/seeds-of-life', (req, res) => {
+  res.render('./portfolio/seeds-of-life');
+});
+
 //Use Required Routes
 app.use(indexRoutes);
 

@@ -83,11 +83,11 @@
   padding-right: 10px;
 }
 
-.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar, .ourWorkGlenlyonDentalPage .transparentBar, .ourWorkHollanderFitnessPage .transparentBar, .error404Page .transparentBar {
+.privacyPolicyPage .transparentBar, .termsAndConditionsPage .transparentBar, .ourWorkAskTheoPage .transparentBar, .ourWorkTeganSteelePage .transparentBar, .ourWorkBarefootBlenderPage .transparentBar, .ourWorkGlenlyonDentalPage .transparentBar, .ourWorkHollanderFitnessPage .transparentBar, .ourWorkSeedsOfLifePage .transparentBar, .error404Page .transparentBar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
-.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar, .ourWorkGlenlyonDentalPage .transparentBar .topSecondaryNavbar, .ourWorkHollanderFitnessPage .transparentBar .topSecondaryNavbar, .error404Page .transparentBar .topSecondaryNavbar {
+.privacyPolicyPage .transparentBar .topSecondaryNavbar, .termsAndConditionsPage .transparentBar .topSecondaryNavbar, .ourWorkAskTheoPage .transparentBar .topSecondaryNavbar, .ourWorkTeganSteelePage .transparentBar .topSecondaryNavbar, .ourWorkBarefootBlenderPage .transparentBar .topSecondaryNavbar, .ourWorkGlenlyonDentalPage .transparentBar .topSecondaryNavbar, .ourWorkHollanderFitnessPage .transparentBar .topSecondaryNavbar, .ourWorkSeedsOfLifePage .transparentBar .topSecondaryNavbar, .error404Page .transparentBar .topSecondaryNavbar {
   background-color: rgba(0, 176, 220, 0.9);
 }
 
@@ -127,6 +127,10 @@
 
 .portfolioHollanderFitnessHero {
   background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489759264/Alacrity%20Web%20Development%20-%20Hollander%20Fitness%20Hero.jpg");
+}
+
+.portfolioSeedsOfLife {
+  background: url("https://res.cloudinary.com/alacrity-web-development/image/upload/v1489844685/Alacrity%20Web%20Development%20-%20Seeds%20of%20Life%20Hero.jpg");
 }
 
 .viewPortHeight {
@@ -237,7 +241,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .portfolioSeedsOfLife, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -642,7 +646,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .portfolioSeedsOfLife, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -916,7 +920,7 @@
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .portfolioSeedsOfLife, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1111,6 +1115,19 @@
   .aboutServiceItemWrapper {
     padding: 10px 0;
   }
+  .legalLinks {
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  .copyrightContainer {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 507px) {
+  .contactFormWrapper {
+    justify-content: center !important;
+  }
 }
 
 body {
@@ -1129,6 +1146,10 @@ a:hover {
 
 a:focus {
   text-decoration: none;
+}
+
+.linkTag {
+  color: #0275d8;
 }
 
 h1 {
@@ -1286,7 +1307,7 @@ p {
   padding-right: 30px;
 }
 
-.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .aboutWhoWeAre {
+.backgroundImage, .heroImage, .aboutHeroImage, .ourWorkHeroImage, .portfolioAskTheoHero, .portfolioTeganHero, .portfolioBarefootBlenderHero, .portfolioGlenlyonDentalHero, .portfolioHollanderFitnessHero, .portfolioSeedsOfLife, .aboutWhoWeAre {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
