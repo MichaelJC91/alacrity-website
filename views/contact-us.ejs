@@ -52,4 +52,84 @@
     </div>
   </div>
 </div>
-<% include ./partials/footer %>
+<div id="contactFormAnchor" class="container-fluid contactFooter topPadding5P">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Ready to Start? Let's Talk! Coffee is on us!</h1>
+      </div>
+      <div class="col-md-12 topPadding50 bottomPadding100">
+        <form action="/mail" method="POST" id="theForm">
+          <div class="d-flex flex-wrap justify-content-between contactFormWrapper">
+            <div class=" contactInput">
+              <input class="name inputField" type="text" name="name" placeholder="Full Name*" required />
+            </div>
+            <div class="contactInput">
+              <input class="email inputField" type="email" name="email" placeholder="Email*" required />
+            </div>
+            <div class="contactInput">
+              <input class="phone inputField" type="tel" name="phone" placeholder="Phone Number*" required/>
+            </div>
+            <div class="contactInput">
+              <input class="subject inputField" type="text" name="subject" placeholder="Subject*" required/>
+            </div>
+            <div class="fullWidth contactInput topPadding50">
+              <input class="fullWidth message inputField" type="text" name="message" placeholder="Describe Your Project in a few Sentences" required/>
+            </div>
+            <div class="fullWidth topPadding30 bottomPadding20">
+              <div
+              id="recaptcha"
+              class="g-recaptcha"
+              data-sitekey=<%= process.env.GOOGLE_SITE_KEY %>
+              data-size="invisible"
+              data-callback="onSubmit">
+              </div>
+              <button id="contactSubmitButtonID" class="btn btn-primary textShadow contactSubmitButton">Submit</button>
+            </div>
+            <div class="fullWidth text-center loader">
+              <div class="icon"></div>
+            </div>
+            <div class="contactMessage text-center fullWidth displayNone">
+              <h5 class="responseMessage"></h5>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid copyrightContainerBackground">
+  <div class="row copyrightContainer">
+    <div class="copyrightText">
+      <span>Copyright @Alacrity Web Development <%= new Date().getFullYear(); %>. All Rights Reserved</span>
+    </div>
+    <ul class="legalLinks ml-auto d-flex flex-row">
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+      <li><a href="/disclaimer">Disclaimer</a></li>
+    </ul>
+</div>
+</div>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script type="text/javascript" src="/app.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="/js/jquery.counterup.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript" src="/js/contactForm.js"></script>
+<script>
+  //Google maps function
+  function initMap() {
+    var melbourne = {lat: -37.8136, lng: 144.9631};
+    var map = new google.maps.Map(document.getElementById('googleMap'), {
+      zoom: 8,
+      center: melbourne
+    });
+    var marker = new google.maps.Marker({
+      position: melbourne,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdf9M5iF9NKbWT6AmzFup09xxj8KQwN9U&callback=initMap"></script>
+</body>
+</html>
