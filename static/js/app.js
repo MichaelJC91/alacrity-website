@@ -11,6 +11,7 @@ import slickCarousel from 'slick-carousel';
 import mobile from './mobile';
 import 'autotrack';
 import 'jquery-smooth-scroll';
+import './cat404';
 
 export default $(document).ready(() => {
 
@@ -25,7 +26,6 @@ export default $(document).ready(() => {
   $('#homeProjectStart').smoothScroll({
     speed: 1250
   });
-
 
   //Run Mobile function
   mobile();

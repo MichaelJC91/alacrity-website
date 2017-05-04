@@ -7,7 +7,9 @@ const compression = require('compression');
 const apicache = require('apicache');
 
 //Required Routes
-const indexRoutes = require('./routes/contact/contact');
+const indexRoutes = require('./routes/indexRoutes/index');
+const portfolioRoutes = require('./routes/portfolioRoutes/portfolio');
+const contactRoute = require('./routes/contact/contact');
 
 //Cache Middleware
 const cache = apicache.middleware;
@@ -48,69 +50,10 @@ app.get('/', (req, res) => {
   res.render('index');
 });
 
-// About Route
-app.get('/about', (req, res) => {
-  res.render('about');
-});
-
-//Our Work Route
-app.get('/our-work', (req, res) => {
-  res.render('our-work');
-});
-
-//Blog Page Route
-app.get('/blog', (req, res) => {
-  res.render('blog');
-});
-
-//Contact Page
-app.get('/contact-us', (req, res) => {
-  res.render('contact-us');
-});
-
-// Legal Document pages
-// Privacy Policy Route
-app.get('/privacy-policy', (req, res) => {
-  res.render('privacy-policy');
-});
-
-// Terms & Conditions
-app.get('/terms-and-conditions', (req, res) => {
-  res.render('terms-and-conditions');
-});
-
-// Website Disclaimer
-app.get('/disclaimer', (req, res) => {
-  res.render('disclaimer');
-});
-
-// Portfolio Works
-app.get('/our-work/asktheo', (req, res) => {
-  res.render('./portfolio/asktheo');
-});
-
-app.get('/our-work/tegan-steele', (req, res) => {
-  res.render('./portfolio/tegan-steele');
-});
-
-app.get('/our-work/glenlyon-dental', (req, res) => {
-  res.render('./portfolio/glenlyon-dental');
-});
-
-app.get('/our-work/hollander-fitness', (req, res) => {
-  res.render('./portfolio/hollander-fitness');
-});
-
-app.get('/our-work/barefoot-blender', (req, res) => {
-  res.render('./portfolio/barefoot-blender');
-});
-
-app.get('/our-work/seeds-of-life', (req, res) => {
-  res.render('./portfolio/seeds-of-life');
-});
-
 //Use Required Routes
 app.use(indexRoutes);
+app.use(contactRoute);
+app.use('/our-work', portfolioRoutes);
 
 //404 Page
 app.get('*', (req,res) => {

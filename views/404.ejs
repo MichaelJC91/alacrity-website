@@ -1,18 +1,38 @@
 <% include ./partials/head %>
     <meta charset="utf-8">
-    <meta name=”description” content="Alacrity Web Developement specialize in website design, ">
+    <meta name=”description” content="This is not the page you're looking for">
     <title>Alacrity Web Development: 404 Page</title>
 </head>
 <body class="error404Page">
 <% include ./partials/secondaryHeader %>
 
-<div class="container">
+<div class="container topPadding50 bottomPadding50">
   <div class="row">
-    <div class="col-md-12">
-      <h2 class="text-center">Oh No! Looks Like You Took a Wrong Turn and Came Across a Page That Doesn't Exist! More Than Likely it was our Fault so Here's a Random Picture of a Cute Animal. At Least This Way Your Trip Wasn't a Total Waste.</h2>
-      <img class="img-fluid cat404" src="" alt="">
+    <div class="col-md-12 text-center">
+      <h1>404. Page Not Found</h1>
+      <h4 class="bottomPadding20">Oh No! Looks Like You Took a Wrong Turn and Came Across a Page That Doesn't Exist! More Than Likely it was our Fault so Here's a Random Picture of a Cute Animal. At Least This Way Your Trip Wasn't a Total Waste. (Psst, if you keep refreshing you get a different random animal)</h4>
+      <img class="img-fluid cuteAnimal404 mx-auto d-block" src="" alt="">
     </div>
   </div>
 </div>
 
-<% include ./partials/footer %>
+<div class="container-fluid copyrightContainerBackground">
+    <div class="row copyrightContainer">
+      <div class="copyrightText">
+        <span>Copyright @Alacrity Web Development <%= new Date().getFullYear(); %>. All Rights Reserved</span>
+      </div>
+      <ul class="legalLinks ml-auto d-flex flex-row">
+        <li><a href="/privacy-policy">Privacy Policy</a></li>
+        <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+        <li><a href="/disclaimer">Disclaimer</a></li>
+      </ul>
+  </div>
+</div>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <script type="text/javascript" src="/app.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.counterup.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="text/javascript" src="/js/contactForm.js"></script>
+</body>
+</html>
