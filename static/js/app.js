@@ -66,16 +66,3 @@ export default $(document).ready(() => {
     mobileFirst: true
   });
 });
-
-//Google maps function
-function initMap() {
-  var melbourne = {lat: -37.8136, lng: 144.9631};
-  var map = new google.maps.Map(document.getElementById('googleMap'), {
-    zoom: 8,
-    center: melbourne
-  });
-  var marker = new google.maps.Marker({
-    position: melbourne,
-    map: map
-  });
-}
