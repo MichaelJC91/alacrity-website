@@ -38,9 +38,9 @@ export default $(document).ready(() => {
   // If not then make col heights the same
   if($(window).width() > 990) {
     colHeight()
-  } /*else {
-    $('.googleMapWrapper').css('height', '400px');
-  }*/
+  } else {
+    $('#googleMap').css('height', '400px');
+  }
 
   //Fire contact form logic
   // contactForm();
