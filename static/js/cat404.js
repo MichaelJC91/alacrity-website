@@ -19,7 +19,7 @@ let cuteAnimalArray = [
 //Random cute animal function
 function getRandomCuteAnimal(array) {
   let randomAnimal = array[Math.floor(Math.random() * array.length)];
-  console.log($('.cuteAnimal404').attr('src', randomAnimal));
+  $('.cuteAnimal404').attr('src', randomAnimal);
 }
 
 //Get random cute animal
