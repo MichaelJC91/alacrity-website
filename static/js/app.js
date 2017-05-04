@@ -36,11 +36,11 @@ export default $(document).ready(() => {
 
   // Check if page width is > 990px
   // If not then make col heights the same
-  if($(window).width() > 990) {
-    colHeight()
-  } else {
-    $('#googleMap').css('height', '400px');
-  }
+  // if($(window).width() > 990) {
+  //   colHeight()
+  // } else {
+  //   $('#googleMap').css('height', '400px');
+  // }
 
   //Fire contact form logic
   // contactForm();
