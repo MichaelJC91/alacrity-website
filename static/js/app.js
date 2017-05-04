@@ -16,7 +16,7 @@ import './cat404';
 export default $(document).ready(() => {
 
   //Google analytics
-  ga('create', 'UA-93931236-1', 'auto');
+  ga('create', 'UA-93918352-1', 'auto');
   ga('send', 'pageview');
 
   // Run header check function
