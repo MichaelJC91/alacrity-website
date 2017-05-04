@@ -2,6 +2,7 @@
 $('#theForm').submit((event) => {
   event.preventDefault();
   grecaptcha.execute();
+  ga('send', 'event', 'Form', 'Submit', 'Contact');
 });
 
 //Contact Form Logic
