@@ -39,7 +39,7 @@ export default $(document).ready(() => {
   if($(window).width() > 990) {
     colHeight()
   } else {
-    $('#googleMap').css('height', '400px');
+    $('.googleMapWrapper').css('height', '400px');
   }
 
   //Fire contact form logic
