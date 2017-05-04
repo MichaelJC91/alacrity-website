@@ -52,20 +52,4 @@
     </div>
   </div>
 </div>
-<script>
-  function initMap() {
-    var melbourne = {lat: -37.8136, lng: 144.9631};
-    var map = new google.maps.Map(document.getElementById('googleMap'), {
-      zoom: 8,
-      center: melbourne
-    });
-    var marker = new google.maps.Marker({
-      position: melbourne,
-      map: map
-    });
-  }
-</script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdf9M5iF9NKbWT6AmzFup09xxj8KQwN9U&callback=initMap">
-</script>
 <% include ./partials/footer %>
