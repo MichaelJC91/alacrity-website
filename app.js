@@ -13,7 +13,7 @@ const portfolioRoutes = require('./routes/portfolioRoutes/portfolio');
 const contactRoute = require('./routes/contact/contact');
 
 //SSL Redirect
-app.use(enforce.HTTPS());
+app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 //Cache Middleware
 const cache = apicache.middleware;
