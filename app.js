@@ -27,7 +27,7 @@ if(process.env.NODE_ENV === "production") {
 }
 
 //SSL Redirect
-app.use(sslRedirect());
+// app.use(sslRedirect());
 
 //Gzip Compress
 app.use(compression());
