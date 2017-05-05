@@ -5,15 +5,11 @@ const expressSanitizer = require('express-sanitizer');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 const apicache = require('apicache');
-const enforce = require('express-sslify');
 
 //Required Routes
 const indexRoutes = require('./routes/indexRoutes/index');
 const portfolioRoutes = require('./routes/portfolioRoutes/portfolio');
 const contactRoute = require('./routes/contact/contact');
-
-//SSL Redirect
-app.use(enforce.HTTPS({ trustProtoHeader: true }));
 
 //Cache Middleware
 const cache = apicache.middleware;
