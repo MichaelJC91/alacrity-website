@@ -5,12 +5,15 @@ const expressSanitizer = require('express-sanitizer');
 const bodyParser = require('body-parser');
 const compression = require('compression');
 const apicache = require('apicache');
-const sslRedirect = require('heroku-ssl-redirect');
+const enforce = require('express-sslify');
 
 //Required Routes
 const indexRoutes = require('./routes/indexRoutes/index');
 const portfolioRoutes = require('./routes/portfolioRoutes/portfolio');
 const contactRoute = require('./routes/contact/contact');
+
+//SSL Redirect
+app.use(enforce.HTTPS());
 
 //Cache Middleware
 const cache = apicache.middleware;
@@ -25,9 +28,6 @@ if(process.env.NODE_ENV === "production") {
       next();
   });
 }
-
-//SSL Redirect
-// app.use(sslRedirect());
 
 //Gzip Compress
 app.use(compression());
