@@ -35,7 +35,7 @@ router.post('/mail', (req, res) => {
     mailgun.messages().send(mailOptions, function (error, body) {
       if(!error) {
         console.log(body);
-        res.sendStatus(200);
+        res.sendStatus(304);
         console.log(mailgun.messages);
       }
     });
