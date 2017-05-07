@@ -8,7 +8,6 @@ const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 //Mailer route
 
 router.post('/mail', (req, res) => {
-  if(res.sendStatus(200)) {
     const reqBody = req.body;
     const sanitizer = req.sanitize;
 
@@ -32,12 +31,12 @@ router.post('/mail', (req, res) => {
                Message: ${ message }`
     };
 
+    console.log(res.status());
+
     //Send Messages
     mailgun.messages().send(mailOptions, function (error, body) {
       console.log(body);
     });
-  } else {
-    res.sendStatus(400);
   }
 });
 
