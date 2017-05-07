@@ -33,10 +33,11 @@ router.post('/mail', (req, res) => {
 
     //Send Messages
     mailgun.messages().send(mailOptions, function (error, body) {
-      console.log(body);
+      if(!error) {
+        console.log(body);
+        res.status(200);
+      }
     });
-
-    console.log(mailgun)
 });
 
 module.exports = router;
