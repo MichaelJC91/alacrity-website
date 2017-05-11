@@ -1,0 +1,74 @@
+<% include ../partials/head %>
+
+  <link href="//cdn.quilljs.com/1.2.4/quill.snow.css" rel="stylesheet">
+  <link href="//cdn.quilljs.com/1.2.4/quill.bubble.css" rel="stylesheet">
+</head>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" style="margin-top: 100px;">
+        <div class="form-group">
+          <form class="" action="/blog/new" method="post">
+            <div class="form-group">
+              <label for="blog-title">Title</label>
+              <input id="blog-title" type="text" name="title" value="" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="feature-image">Feature Image</label>
+              <input id="feature-image" type="text" name="featureImage" value="" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="categories">Categories</label>
+              <input id="categories" type="text" name="categories" value="" class="form-control">
+              <small class="form-text text-muted">Seperate By Commas</small>
+            </div>
+            <div class="form-group">
+              <label for="excerpt">Excerpt</label>
+              <input id="excerpt" type="text" name="excerpt" value="" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="editor">Content</label>
+              <div id="editor">
+
+              </div>
+            </div>
+            <div class="">
+              <h2>SEO</h2>
+              <div class="form-group">
+                <label for="focus-keyword">Focus Keyword</label>
+                <input id="focus-keyword" type="text" name="focusKeyword" value="" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="url-slug">Url Slug</label>
+                <input id="url-slug" type="text" name="urlSlug" value="" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="seo-description">Seo Description</label>
+                <input id="seo-description" type="text" name="seoDescription" value="" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <button type="submit" name="button" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="//cdn.quilljs.com/1.2.4/quill.min.js"></script>
+<script type="text/javascript">
+let quill = new Quill('#editor', {
+  modules: {
+    toolbar: [
+      [{ header: [1, 2, false] }],
+      ['bold', 'italic', 'underline'],
+      ['image', 'code-block']
+    ]
+  },
+  placeholder: 'Compose an epic...',
+  theme: 'snow'  // or 'bubble'
+});
+</script>
+<% include ../partials/footer %>

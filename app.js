@@ -20,6 +20,7 @@ const indexRoutes = require('./routes/indexRoutes/index');
 const portfolioRoutes = require('./routes/portfolioRoutes/portfolio');
 const contactRoute = require('./routes/contact/contact');
 const user = require('./routes/users/user');
+const blog = require('./routes/blog-posts/blog');
 
 //Cache Middleware
 const cache = apicache.middleware;
@@ -109,6 +110,7 @@ app.get('/', (req, res) => {
 app.use(indexRoutes);
 app.use(contactRoute);
 app.use('/user', user);
+app.use('/blog', blog);
 app.use('/our-work', portfolioRoutes);
 
 //404 Page

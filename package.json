@@ -40,7 +40,7 @@
     "jquery.counterup": "^2.1.0",
     "jquery.scrollto": "^2.1.2",
     "mailgun-js": "^0.10.1",
-    "mongoose": "^4.8.2",
+    "mongoose": "^4.9.8",
     "passport": "^0.3.2",
     "passport-auth0": "^0.6.0",
     "sendmail": "^1.1.1",
@@ -49,12 +49,13 @@
     "waypoints": "^4.0.1"
   },
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.22.0",
     "compression-webpack-plugin": "^0.3.2",
     "testimonial": "^2.0.1",
     "uglify-js": "^2.8.12",
-    "uglifyjs-webpack-plugin": "^0.3.0"
+    "uglifyjs-webpack-plugin": "^0.3.0",
+    "webpack": "^2.5.1"
   }
 }

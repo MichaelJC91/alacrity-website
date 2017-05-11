@@ -22,11 +22,6 @@ router.get('/our-work', (req, res) => {
   res.render('our-work');
 });
 
-//Blog Page Route
-router.get('/blog', (req, res) => {
-  res.render('blog');
-});
-
 //Contact Page
 router.get('/contact-us', (req, res) => {
   res.render('contact-us');

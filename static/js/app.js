@@ -4,7 +4,6 @@ import colHeight from './columnHeights';
 window.$ = window.jQuery = $;
 import tether from 'tether';
 global.Tether = tether;
-require('bootstrap');
 import toggleFunction from './toggleFunction';
 import header from './header';
 import slickCarousel from 'slick-carousel';
